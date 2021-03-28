@@ -1,21 +1,13 @@
-14:58:15.383  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 3.
-14:58:15.384  DEBUG RecursiveSearch - LEFT = 0; MID = 0; RIGHT = 1.
-15:00:16.759  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 3.
-15:00:16.760  DEBUG RecursiveSearch - LEFT = 1; MID = 2; RIGHT = 3.
-15:00:16.761  DEBUG RecursiveSearch - LEFT = 2; MID = 2; RIGHT = 3.
-15:03:25.576  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 3.
-15:03:25.578  DEBUG RecursiveSearch - LEFT = 1; MID = 2; RIGHT = 3.
-15:03:25.578  DEBUG RecursiveSearch - ANSWER = 1.
-15:03:29.443  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 3.
-15:03:29.444  DEBUG RecursiveSearch - ANSWER = 0.
-15:05:02.392  DEBUG RecursiveSearch - LEFT = 0; MID = 2; RIGHT = 4; KEY = 5.
-15:05:02.394  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 2; KEY = 5.
-15:05:02.394  DEBUG RecursiveSearch - KEY = 5; ANSWER = 0.
-15:05:25.004  DEBUG RecursiveSearch - LEFT = 0; MID = 2; RIGHT = 4; KEY = 8.
-15:05:25.005  DEBUG RecursiveSearch - LEFT = 2; MID = 3; RIGHT = 4; KEY = 8.
-15:05:25.007  DEBUG RecursiveSearch - KEY = 8; ANSWER = 2.
-15:06:03.302  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 3; KEY = 3.
-15:06:03.303  DEBUG RecursiveSearch - KEY = 3; ANSWER = 1.
-15:06:06.133  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 3; KEY = 4.
-15:06:06.134  DEBUG RecursiveSearch - LEFT = 1; MID = 2; RIGHT = 3; KEY = 4.
-15:06:06.136  DEBUG RecursiveSearch - KEY = 4; ANSWER = -1.
+23:30:57.554  DEBUG RecursiveSearch - LEFT = 0; MID = 4; RIGHT = 9; KEY = 8.
+23:30:57.556  DEBUG RecursiveSearch - LEFT = 0; MID = 2; RIGHT = 4; KEY = 8.
+23:30:57.557  DEBUG RecursiveSearch - KEY = 8; KEY_POSITION = 3.
+23:31:04.675  DEBUG RecursiveSearch - LEFT = 0; MID = 4; RIGHT = 9; KEY = 1.
+23:31:04.677  DEBUG RecursiveSearch - LEFT = 0; MID = 2; RIGHT = 4; KEY = 1.
+23:31:04.677  DEBUG RecursiveSearch - LEFT = 0; MID = 1; RIGHT = 2; KEY = 1.
+23:31:04.677  DEBUG RecursiveSearch - KEY = 1; KEY_POSITION = 0.
+23:31:15.919  DEBUG RecursiveSearch - LEFT = 0; MID = 4; RIGHT = 9; KEY = 130.
+23:31:15.921  DEBUG RecursiveSearch - LEFT = 4; MID = 6; RIGHT = 9; KEY = 130.
+23:31:15.921  DEBUG RecursiveSearch - LEFT = 6; MID = 7; RIGHT = 9; KEY = 130.
+23:31:15.921  DEBUG RecursiveSearch - LEFT = 7; MID = 8; RIGHT = 9; KEY = 130.
+23:31:15.922  DEBUG RecursiveSearch - KEY = 130; KEY_POSITION = -1.
+

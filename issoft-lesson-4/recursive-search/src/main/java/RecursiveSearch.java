@@ -20,16 +20,22 @@ public class RecursiveSearch {
                 answer = right;
             }
 
-            logger.debug(String.format("KEY = %d; ANSWER = %d.", key, answer));
+            logger.debug(String.format("KEY = %d; KEY_POSITION = %d.", key, answer));
 
             return answer;
         }
 
         int mid = (left + right) >>> 1;
 
+        if (numbers[mid] == key) {
+            logger.debug(String.format("KEY = %d; KEY_POSITION = %d.", key, mid));
+
+            return mid;
+        }
+
         logger.debug(String.format("LEFT = %d; MID = %d; RIGHT = %d; KEY = %d.", left, mid, right, key));
 
-        if (numbers[mid] >= key) {
+        if (numbers[mid] > key) {
             return binarySearch0(numbers, left, mid, key);
         }
         else {
@@ -48,3 +54,4 @@ public class RecursiveSearch {
     }
 
 }
+
