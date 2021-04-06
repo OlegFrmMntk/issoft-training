@@ -6,34 +6,25 @@ public class Order {
 
     private String id;
 
-    private String userId;
-
     private OrderItem[] items;
-
-    private Address address;
 
     private OrderStatus status;
 
-    private Date date;
+    private final String userId;
 
-    private double totalPrice;
+    private final Address address;
 
-    public Order(String userId) {
+    private final Date date;
+
+    public Order(String userId, Address address, Date date, OrderItem... items) {
         this.userId = userId;
-    }
-
-    public Order(String userId, Address address, OrderItem... items) {
-        this.userId = userId;
+        this.date = date;
         this.items = items;
         this.address = address;
     }
 
 
     public void setId(String id) { this.id = id; }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 
     public void setItems(OrderItem... items) {
         this.items = items;
@@ -42,15 +33,6 @@ public class Order {
     public void setStatus(OrderStatus status) {
         this.status = status;
     }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
 
     public String getId() {
         return id;
@@ -77,15 +59,12 @@ public class Order {
     }
 
     public double getTotalPrice() {
-        calculateTotalPrice();
+        double totalPrice = 0;
+        for (OrderItem item : items) {
+            totalPrice += item.getPrice() * item.getCount();
+        }
 
         return totalPrice;
     }
 
-    private void calculateTotalPrice() {
-        this.totalPrice = 0;
-        for (OrderItem item : items) {
-            this.totalPrice += item.getPrice() * item.getCount();
-        }
-    }
 }

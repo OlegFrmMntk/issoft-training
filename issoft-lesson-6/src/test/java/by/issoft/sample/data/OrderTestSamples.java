@@ -1,5 +1,7 @@
 package by.issoft.sample.data;
 
+import java.util.Date;
+
 public class OrderTestSamples {
 
     public static Order anyValidOrder() {
@@ -7,14 +9,14 @@ public class OrderTestSamples {
     }
 
     public static Order validOrder(String userId) {
-        Order order = new Order(userId);
+        Address address = new Address("Belarus", "Hrodno", "Ivye", "Pionerskaya",
+                "25A", "17B", 231337);
 
-        order.setAddress(new Address("Belarus", "Hrodno", "Ivye", "Pionerskaya",
-                "25A", "17B", 231337));
+        Date date = new Date();
 
-        order.setItems(new OrderItem("Sofa", 1, 599.99));
+        OrderItem orderItem = new OrderItem("Sofa", 1, 599.99);
 
-        return order;
+        return new Order(userId, address, date, orderItem);
     }
 
     public static Order anyOrder() {

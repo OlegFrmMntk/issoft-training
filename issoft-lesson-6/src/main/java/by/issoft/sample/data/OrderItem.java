@@ -4,11 +4,11 @@ public class OrderItem {
 
     private String id;
 
-    private String name;
+    private final String name;
 
-    private int count;
+    private final int count;
 
-    private double price;
+    private final double price;
 
     public OrderItem(String name, int count, double price) {
         this.name = name;
@@ -42,24 +42,12 @@ public class OrderItem {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getCount() {
         return count;
     }
 
-    public void setCount(int count) {
-        this.count = count;
-    }
-
     public double getPrice() {
         return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
 }

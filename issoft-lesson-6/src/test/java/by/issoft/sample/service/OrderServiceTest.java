@@ -2,6 +2,7 @@ package by.issoft.sample.service;
 
 import by.issoft.sample.data.Order;
 import by.issoft.sample.data.OrderStatus;
+import by.issoft.sample.persistence.OrderItemStorage;
 import by.issoft.sample.persistence.OrderStorage;
 
 import static by.issoft.sample.data.OrderTestSamples.anyOrder;
@@ -23,7 +24,9 @@ class OrderServiceTest {
 
     private OrderValidator orderValidator;
 
-    private OrderStorage orderStorage ;
+    private OrderStorage orderStorage;
+
+    private OrderItemStorage orderItemStorage;
 
     private OrderService orderService;
 
@@ -31,10 +34,11 @@ class OrderServiceTest {
     public void before() {
         orderValidator = mock(OrderValidator.class);
         orderStorage = mock(OrderStorage.class);
+        orderItemStorage = mock(OrderItemStorage.class);
 
         when(orderStorage.persist(any())).thenReturn(UUID.randomUUID().toString());
 
-        orderService = new OrderService(orderValidator, orderStorage);
+        orderService = new OrderService(orderValidator, orderStorage, orderItemStorage);
     }
 
     @Test
