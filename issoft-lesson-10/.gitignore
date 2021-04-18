@@ -1,0 +1,4 @@
+# Project exclude paths
+/issoft-lesson-10.iml
+.idea/
+/target/
