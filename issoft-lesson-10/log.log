@@ -1,80 +1,279 @@
-2021-04-18 09:09:01 INFO  Train:70 - class by.issoft.sample.domain.PassengerCarriageImpl = 42713872-b1fb-4bcd-859e-f6fe45e6ace6 added to train
-2021-04-18 09:09:01 INFO  Train:70 - class by.issoft.sample.domain.CargoCarriageImpl = 8f888568-bd2d-4999-bf50-ee3895158e9c added to train
-2021-04-18 09:09:01 INFO  Train:74 - class by.issoft.sample.domain.PassengerCarriageImpl = 27a20884-dc83-40d8-8a49-2b80f7c7313e added to train
-2021-04-18 09:09:01 INFO  Train:74 - class by.issoft.sample.domain.CargoCarriageImpl = f7f918d7-58e4-4cf3-ab13-d02c87e80e9d added to train
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = c6fa4019-8fac-48ee-8873-70c9adfb9a6e, Cargo = Cargo{id = ae1c8e6a-c2de-4de0-8d2c-1872c89dfd12, type = SOLID, weight = 2} added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = 989529d5-058a-49b5-ae75-00c32c889ee1, Cargo = Cargo{id = cc2c2f26-fafc-4c14-9677-d1182857b226, type = GAS, weight = 4} added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = 5186d199-d363-4cf6-8f2b-e09b4229336d, Cargo = Cargo{id = 90d974d9-bafc-4753-a34a-f0a5cb268d83, type = FLUID, weight = 6} added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = e0ee97c8-d808-4c3a-9e3e-2cf8f50efe4d, Passenger = d376d804-186b-4c9e-96b9-1fc536b5d377 added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = e0ee97c8-d808-4c3a-9e3e-2cf8f50efe4d, Passenger = 6926fbea-587d-4c6a-b09f-a339e0287bf4 added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = e0ee97c8-d808-4c3a-9e3e-2cf8f50efe4d, Passenger = b6620caa-3dd2-4ce6-b5b7-0d2bd3347f80 added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 05399a3a-9e66-4966-b094-f4998707fd92, Passenger = 2fc70eea-e31b-4b37-acdf-cf4d7f9aba4a added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 05399a3a-9e66-4966-b094-f4998707fd92, Passenger = d3c5de80-709d-401d-95a4-885eca024e89 added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 05399a3a-9e66-4966-b094-f4998707fd92, Passenger = dbd94d25-39e5-4824-b62d-c4f91dcb8802 added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = d93235ab-0243-40a1-a53e-de98ea0ff63d, type = SOLID, weight = 2} added
-2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriageImpl = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = d93235ab-0243-40a1-a53e-de98ea0ff63d, type = SOLID, weight = 2} uploaded
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = 72c874f5-fd65-44d7-ba64-e40074ef8b3e, type = GAS, weight = 4} added
-2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriageImpl = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = 72c874f5-fd65-44d7-ba64-e40074ef8b3e, type = GAS, weight = 4} uploaded
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = e60d77ee-9f38-40e1-87f6-a99f4c18d611, type = FLUID, weight = 6} added
-2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriageImpl = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = e60d77ee-9f38-40e1-87f6-a99f4c18d611, type = FLUID, weight = 6} uploaded
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = bc12f1cc-a602-4ee7-afee-5cf2505bee96, type = SOLID, weight = 2} added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 978b12ce-06a9-45bd-a639-c48e83b7ae98, type = GAS, weight = 4} added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 6db7ed31-87ff-45eb-94df-596d94bcd2cb, type = FLUID, weight = 6} added
-2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriageImpl = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = bc12f1cc-a602-4ee7-afee-5cf2505bee96, type = SOLID, weight = 2} uploaded
-2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriageImpl = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 978b12ce-06a9-45bd-a639-c48e83b7ae98, type = GAS, weight = 4} uploaded
-2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriageImpl = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 6db7ed31-87ff-45eb-94df-596d94bcd2cb, type = FLUID, weight = 6} uploaded
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = a06ee5d9-7d4c-40a2-be05-867b531ae0c6 added
-2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriageImpl = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = a06ee5d9-7d4c-40a2-be05-867b531ae0c6 dropped
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = d39e71b6-7d9b-40f7-8861-a02c9e5171a9 added
-2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriageImpl = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = d39e71b6-7d9b-40f7-8861-a02c9e5171a9 dropped
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = 018f0678-4f2e-45cf-970a-a36016adfff6 added
-2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriageImpl = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = 018f0678-4f2e-45cf-970a-a36016adfff6 dropped
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8640f3b7-66d3-47bf-88fb-8388fdfacb04 added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 769bf7cb-443d-48e4-b6f0-19ff2337e4b3 added
-2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8731f433-1ba9-4392-8b54-a8061597b9e0 added
-2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8640f3b7-66d3-47bf-88fb-8388fdfacb04 dropped
-2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 769bf7cb-443d-48e4-b6f0-19ff2337e4b3 dropped
-2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8731f433-1ba9-4392-8b54-a8061597b9e0 dropped
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = b6e2bd08-f167-4a52-9284-5185935177a1, Cargo = Cargo{id = 0811c0df-cd90-4bb1-8b37-0fdf23d093e4, type = SOLID, weight = 2} added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = b6e2bd08-f167-4a52-9284-5185935177a1, Cargo = Cargo{id = eea36055-9b5c-42cc-a431-4ef4f843ee00, type = GAS, weight = 4} added
-2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriageImpl = b6e2bd08-f167-4a52-9284-5185935177a1, Cargo = Cargo{id = f08f62f2-7899-4e9d-a74e-9890dcb6759b, type = FLUID, weight = 6} added
-2021-04-18 09:26:53 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriageImpl = 731a93b7-87fb-433a-b0ea-632ad9324097 added to train
-2021-04-18 09:26:53 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriageImpl = 92535b4a-db2a-45e0-8568-de47837a070f added to train
-2021-04-18 09:26:53 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriageImpl = 15dc97a8-8347-4e35-94cf-e2cee2dfb0b3 added to train
-2021-04-18 09:26:53 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriageImpl = 9d1400b6-8030-4b02-8f57-a6fddf21dc9e added to train
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = c909c9b0-b358-4abf-b080-1df36870d51d, Cargo = Cargo{id = 77a06702-1fce-4be3-bdd0-a04406c7567a, type = SOLID, weight = 2} added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = f8caa378-ffe9-4de4-aa43-fddc38d43557, Cargo = Cargo{id = 7ab6de31-e78f-4736-9583-daed9d9f4acc, type = GAS, weight = 4} added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = 5d73fce8-a6aa-4be2-aeaa-bb85761694c9, Cargo = Cargo{id = 12148d8a-a8ee-4441-b116-a587aab3f503, type = FLUID, weight = 6} added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 112a7d25-5e34-4369-8a95-d701d4395ad9, Passenger = 2fb7642e-546e-4074-9162-9221b6d1153f added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 112a7d25-5e34-4369-8a95-d701d4395ad9, Passenger = 24ed9529-70ac-47ba-9dc2-1622598de992 added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 112a7d25-5e34-4369-8a95-d701d4395ad9, Passenger = ad4316f8-fd4e-454b-9fc9-943ddad6536c added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 1bee8e9e-943a-47e5-81ca-04207ffe5f43, Passenger = 1529ca4d-fdda-4a4e-9520-1b65d67de58b added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 1bee8e9e-943a-47e5-81ca-04207ffe5f43, Passenger = a1519e01-3385-44e1-a6ff-81dae3d02f59 added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 1bee8e9e-943a-47e5-81ca-04207ffe5f43, Passenger = 8d442151-ae09-4360-94c3-1401b1275a1f added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 87eb8975-8ec0-422f-befc-fc5b57ed1e3e, type = SOLID, weight = 2} added
-2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriageImpl = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 87eb8975-8ec0-422f-befc-fc5b57ed1e3e, type = SOLID, weight = 2} uploaded
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = f4c4e871-8ec0-445c-af51-c50d78ddeea4, type = GAS, weight = 4} added
-2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriageImpl = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = f4c4e871-8ec0-445c-af51-c50d78ddeea4, type = GAS, weight = 4} uploaded
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 2773b475-e267-4351-a8c1-9a0692592ef2, type = FLUID, weight = 6} added
-2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriageImpl = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 2773b475-e267-4351-a8c1-9a0692592ef2, type = FLUID, weight = 6} uploaded
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 6e7c2bed-cd49-4dd3-906f-dfecca04918f, type = SOLID, weight = 2} added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = df79ca26-a807-4929-92a6-452d2a48a68b, type = GAS, weight = 4} added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 4587292f-6494-41ae-a0de-c4f03f939bde, type = FLUID, weight = 6} added
-2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriageImpl = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 6e7c2bed-cd49-4dd3-906f-dfecca04918f, type = SOLID, weight = 2} uploaded
-2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriageImpl = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = df79ca26-a807-4929-92a6-452d2a48a68b, type = GAS, weight = 4} uploaded
-2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriageImpl = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 4587292f-6494-41ae-a0de-c4f03f939bde, type = FLUID, weight = 6} uploaded
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = edd424e1-9525-490f-ba98-3ed3f9c27be6 added
-2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = edd424e1-9525-490f-ba98-3ed3f9c27be6 dropped
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 975107da-88b4-45a1-8f10-bb1820debbcb added
-2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 975107da-88b4-45a1-8f10-bb1820debbcb dropped
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 310964bc-589e-43d8-87db-61170b6dbc19 added
-2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 310964bc-589e-43d8-87db-61170b6dbc19 dropped
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = d3c8b247-f544-40f3-87f8-edafb5d2e485 added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = 53ac2716-7550-470c-99ff-111ff7a903e1 added
-2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriageImpl = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = a16efa68-3bff-48c5-9790-6a995aedc60c added
-2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = d3c8b247-f544-40f3-87f8-edafb5d2e485 dropped
-2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = 53ac2716-7550-470c-99ff-111ff7a903e1 dropped
-2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriageImpl = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = a16efa68-3bff-48c5-9790-6a995aedc60c dropped
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = a39823d3-0010-4a6f-bd29-f586b018cf43, Cargo = Cargo{id = 80b7bb30-fc99-4670-ac31-54548434c316, type = SOLID, weight = 2} added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = a39823d3-0010-4a6f-bd29-f586b018cf43, Cargo = Cargo{id = 6548b7c2-64e8-4271-8687-048858bfee43, type = GAS, weight = 4} added
-2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriageImpl = a39823d3-0010-4a6f-bd29-f586b018cf43, Cargo = Cargo{id = e37886a4-d09f-484a-80be-8b6ae4cf48fb, type = FLUID, weight = 6} added
+2021-04-18 09:09:01 INFO  Train:70 - class by.issoft.sample.domain.PassengerCarriage = 42713872-b1fb-4bcd-859e-f6fe45e6ace6 added to train
+2021-04-18 09:09:01 INFO  Train:70 - class by.issoft.sample.domain.CargoCarriage = 8f888568-bd2d-4999-bf50-ee3895158e9c added to train
+2021-04-18 09:09:01 INFO  Train:74 - class by.issoft.sample.domain.PassengerCarriage = 27a20884-dc83-40d8-8a49-2b80f7c7313e added to train
+2021-04-18 09:09:01 INFO  Train:74 - class by.issoft.sample.domain.CargoCarriage = f7f918d7-58e4-4cf3-ab13-d02c87e80e9d added to train
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = c6fa4019-8fac-48ee-8873-70c9adfb9a6e, Cargo = Cargo{id = ae1c8e6a-c2de-4de0-8d2c-1872c89dfd12, type = SOLID, weight = 2} added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = 989529d5-058a-49b5-ae75-00c32c889ee1, Cargo = Cargo{id = cc2c2f26-fafc-4c14-9677-d1182857b226, type = GAS, weight = 4} added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = 5186d199-d363-4cf6-8f2b-e09b4229336d, Cargo = Cargo{id = 90d974d9-bafc-4753-a34a-f0a5cb268d83, type = FLUID, weight = 6} added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = e0ee97c8-d808-4c3a-9e3e-2cf8f50efe4d, Passenger = d376d804-186b-4c9e-96b9-1fc536b5d377 added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = e0ee97c8-d808-4c3a-9e3e-2cf8f50efe4d, Passenger = 6926fbea-587d-4c6a-b09f-a339e0287bf4 added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = e0ee97c8-d808-4c3a-9e3e-2cf8f50efe4d, Passenger = b6620caa-3dd2-4ce6-b5b7-0d2bd3347f80 added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = 05399a3a-9e66-4966-b094-f4998707fd92, Passenger = 2fc70eea-e31b-4b37-acdf-cf4d7f9aba4a added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = 05399a3a-9e66-4966-b094-f4998707fd92, Passenger = d3c5de80-709d-401d-95a4-885eca024e89 added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = 05399a3a-9e66-4966-b094-f4998707fd92, Passenger = dbd94d25-39e5-4824-b62d-c4f91dcb8802 added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = d93235ab-0243-40a1-a53e-de98ea0ff63d, type = SOLID, weight = 2} added
+2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriage = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = d93235ab-0243-40a1-a53e-de98ea0ff63d, type = SOLID, weight = 2} uploaded
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = 72c874f5-fd65-44d7-ba64-e40074ef8b3e, type = GAS, weight = 4} added
+2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriage = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = 72c874f5-fd65-44d7-ba64-e40074ef8b3e, type = GAS, weight = 4} uploaded
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = e60d77ee-9f38-40e1-87f6-a99f4c18d611, type = FLUID, weight = 6} added
+2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriage = fbbc3103-3702-4418-ab64-85f0f34aedb5, Cargo = Cargo{id = e60d77ee-9f38-40e1-87f6-a99f4c18d611, type = FLUID, weight = 6} uploaded
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = bc12f1cc-a602-4ee7-afee-5cf2505bee96, type = SOLID, weight = 2} added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 978b12ce-06a9-45bd-a639-c48e83b7ae98, type = GAS, weight = 4} added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 6db7ed31-87ff-45eb-94df-596d94bcd2cb, type = FLUID, weight = 6} added
+2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriage = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = bc12f1cc-a602-4ee7-afee-5cf2505bee96, type = SOLID, weight = 2} uploaded
+2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriage = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 978b12ce-06a9-45bd-a639-c48e83b7ae98, type = GAS, weight = 4} uploaded
+2021-04-18 09:09:01 INFO  Train:174 - class by.issoft.sample.domain.CargoCarriage = 872fd964-6906-4142-b0ce-382c2a7d1ebc, Cargo = Cargo{id = 6db7ed31-87ff-45eb-94df-596d94bcd2cb, type = FLUID, weight = 6} uploaded
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = a06ee5d9-7d4c-40a2-be05-867b531ae0c6 added
+2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriage = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = a06ee5d9-7d4c-40a2-be05-867b531ae0c6 dropped
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = d39e71b6-7d9b-40f7-8861-a02c9e5171a9 added
+2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriage = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = d39e71b6-7d9b-40f7-8861-a02c9e5171a9 dropped
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = 018f0678-4f2e-45cf-970a-a36016adfff6 added
+2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriage = f169bef0-ccbd-469e-9ec2-b192566846cf, Passenger = 018f0678-4f2e-45cf-970a-a36016adfff6 dropped
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8640f3b7-66d3-47bf-88fb-8388fdfacb04 added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 769bf7cb-443d-48e4-b6f0-19ff2337e4b3 added
+2021-04-18 09:09:01 INFO  Train:191 - class by.issoft.sample.domain.PassengerCarriage = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8731f433-1ba9-4392-8b54-a8061597b9e0 added
+2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriage = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8640f3b7-66d3-47bf-88fb-8388fdfacb04 dropped
+2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriage = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 769bf7cb-443d-48e4-b6f0-19ff2337e4b3 dropped
+2021-04-18 09:09:01 INFO  Train:208 - class by.issoft.sample.domain.PassengerCarriage = 4810a323-0987-404c-ab12-483c38783e93, Passenger = 8731f433-1ba9-4392-8b54-a8061597b9e0 dropped
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = b6e2bd08-f167-4a52-9284-5185935177a1, Cargo = Cargo{id = 0811c0df-cd90-4bb1-8b37-0fdf23d093e4, type = SOLID, weight = 2} added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = b6e2bd08-f167-4a52-9284-5185935177a1, Cargo = Cargo{id = eea36055-9b5c-42cc-a431-4ef4f843ee00, type = GAS, weight = 4} added
+2021-04-18 09:09:01 INFO  Train:142 - class by.issoft.sample.domain.CargoCarriage = b6e2bd08-f167-4a52-9284-5185935177a1, Cargo = Cargo{id = f08f62f2-7899-4e9d-a74e-9890dcb6759b, type = FLUID, weight = 6} added
+2021-04-18 09:26:53 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriage = 731a93b7-87fb-433a-b0ea-632ad9324097 added to train
+2021-04-18 09:26:53 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriage = 92535b4a-db2a-45e0-8568-de47837a070f added to train
+2021-04-18 09:26:53 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriage = 15dc97a8-8347-4e35-94cf-e2cee2dfb0b3 added to train
+2021-04-18 09:26:53 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriage = 9d1400b6-8030-4b02-8f57-a6fddf21dc9e added to train
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = c909c9b0-b358-4abf-b080-1df36870d51d, Cargo = Cargo{id = 77a06702-1fce-4be3-bdd0-a04406c7567a, type = SOLID, weight = 2} added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = f8caa378-ffe9-4de4-aa43-fddc38d43557, Cargo = Cargo{id = 7ab6de31-e78f-4736-9583-daed9d9f4acc, type = GAS, weight = 4} added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = 5d73fce8-a6aa-4be2-aeaa-bb85761694c9, Cargo = Cargo{id = 12148d8a-a8ee-4441-b116-a587aab3f503, type = FLUID, weight = 6} added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 112a7d25-5e34-4369-8a95-d701d4395ad9, Passenger = 2fb7642e-546e-4074-9162-9221b6d1153f added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 112a7d25-5e34-4369-8a95-d701d4395ad9, Passenger = 24ed9529-70ac-47ba-9dc2-1622598de992 added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 112a7d25-5e34-4369-8a95-d701d4395ad9, Passenger = ad4316f8-fd4e-454b-9fc9-943ddad6536c added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 1bee8e9e-943a-47e5-81ca-04207ffe5f43, Passenger = 1529ca4d-fdda-4a4e-9520-1b65d67de58b added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 1bee8e9e-943a-47e5-81ca-04207ffe5f43, Passenger = a1519e01-3385-44e1-a6ff-81dae3d02f59 added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 1bee8e9e-943a-47e5-81ca-04207ffe5f43, Passenger = 8d442151-ae09-4360-94c3-1401b1275a1f added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 87eb8975-8ec0-422f-befc-fc5b57ed1e3e, type = SOLID, weight = 2} added
+2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriage = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 87eb8975-8ec0-422f-befc-fc5b57ed1e3e, type = SOLID, weight = 2} uploaded
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = f4c4e871-8ec0-445c-af51-c50d78ddeea4, type = GAS, weight = 4} added
+2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriage = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = f4c4e871-8ec0-445c-af51-c50d78ddeea4, type = GAS, weight = 4} uploaded
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 2773b475-e267-4351-a8c1-9a0692592ef2, type = FLUID, weight = 6} added
+2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriage = 438f624f-014e-401d-a923-1066c075357a, Cargo = Cargo{id = 2773b475-e267-4351-a8c1-9a0692592ef2, type = FLUID, weight = 6} uploaded
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 6e7c2bed-cd49-4dd3-906f-dfecca04918f, type = SOLID, weight = 2} added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = df79ca26-a807-4929-92a6-452d2a48a68b, type = GAS, weight = 4} added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 4587292f-6494-41ae-a0de-c4f03f939bde, type = FLUID, weight = 6} added
+2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriage = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 6e7c2bed-cd49-4dd3-906f-dfecca04918f, type = SOLID, weight = 2} uploaded
+2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriage = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = df79ca26-a807-4929-92a6-452d2a48a68b, type = GAS, weight = 4} uploaded
+2021-04-18 09:26:53 INFO  TrainImpl:174 - class by.issoft.sample.domain.CargoCarriage = eae9be4a-4b11-493a-a9ff-7c769b8ba0fb, Cargo = Cargo{id = 4587292f-6494-41ae-a0de-c4f03f939bde, type = FLUID, weight = 6} uploaded
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = edd424e1-9525-490f-ba98-3ed3f9c27be6 added
+2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriage = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = edd424e1-9525-490f-ba98-3ed3f9c27be6 dropped
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 975107da-88b4-45a1-8f10-bb1820debbcb added
+2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriage = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 975107da-88b4-45a1-8f10-bb1820debbcb dropped
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 310964bc-589e-43d8-87db-61170b6dbc19 added
+2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriage = 4cb6d6e0-3214-46e2-af1c-afaf15c549fd, Passenger = 310964bc-589e-43d8-87db-61170b6dbc19 dropped
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = d3c8b247-f544-40f3-87f8-edafb5d2e485 added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = 53ac2716-7550-470c-99ff-111ff7a903e1 added
+2021-04-18 09:26:53 INFO  TrainImpl:191 - class by.issoft.sample.domain.PassengerCarriage = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = a16efa68-3bff-48c5-9790-6a995aedc60c added
+2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriage = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = d3c8b247-f544-40f3-87f8-edafb5d2e485 dropped
+2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriage = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = 53ac2716-7550-470c-99ff-111ff7a903e1 dropped
+2021-04-18 09:26:53 INFO  TrainImpl:208 - class by.issoft.sample.domain.PassengerCarriage = 07615e1a-b3fb-470c-9533-1ca8ead0071c, Passenger = a16efa68-3bff-48c5-9790-6a995aedc60c dropped
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = a39823d3-0010-4a6f-bd29-f586b018cf43, Cargo = Cargo{id = 80b7bb30-fc99-4670-ac31-54548434c316, type = SOLID, weight = 2} added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = a39823d3-0010-4a6f-bd29-f586b018cf43, Cargo = Cargo{id = 6548b7c2-64e8-4271-8687-048858bfee43, type = GAS, weight = 4} added
+2021-04-18 09:26:53 INFO  TrainImpl:142 - class by.issoft.sample.domain.CargoCarriage = a39823d3-0010-4a6f-bd29-f586b018cf43, Cargo = Cargo{id = e37886a4-d09f-484a-80be-8b6ae4cf48fb, type = FLUID, weight = 6} added
+2021-04-19 01:38:31 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriage = 3a75eb0d-e5c0-4c95-8946-de399ba4c833 added to train
+2021-04-19 01:38:31 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriage = 047b71f8-f9c1-4ff6-9f67-dd5b9a5da9fd added to train
+2021-04-19 01:38:31 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriage = e25f3c70-6e29-478b-860a-1e42de5310f7 added to train
+2021-04-19 01:38:31 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriage = db4fc17f-f3b5-44b9-a2df-1a18f40572ab added to train
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 6b42de6e-6598-4f88-8c8a-4e476271699f, Cargo = Cargo{id = d81206c3-b035-45d7-828e-a8fb1754fcdd, type = SOLID, weight = 2} added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 813d8eab-0ec2-4c46-89fd-568daaabb572, Cargo = Cargo{id = ee6d6833-c2d1-4882-8938-43b6ce73990c, type = GAS, weight = 4} added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 1a5182a2-1ee6-4b7d-b64d-dea48c5a82d5, Cargo = Cargo{id = 9b1a20bf-dd56-457d-a37c-714efb74c4ba, type = FLUID, weight = 6} added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = ad620106-2a64-4860-8b47-fb5f4e8811b5, Passenger = 1bd430a1-d903-423c-a3a6-95d8cdbc2cbd added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = ad620106-2a64-4860-8b47-fb5f4e8811b5, Passenger = 879b4b74-2cee-4ee6-af3b-c806d770cc16 added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = ad620106-2a64-4860-8b47-fb5f4e8811b5, Passenger = 5e0e95f8-ce1c-4902-b7f7-5453a9527c5d added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = b03f4a45-9b72-4946-9470-d4a740c3bb56, Passenger = 07e424d0-3b74-4c4d-96d6-93a67c44d280 added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = b03f4a45-9b72-4946-9470-d4a740c3bb56, Passenger = f682606a-c9c3-444d-8f89-2260f47030a7 added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = b03f4a45-9b72-4946-9470-d4a740c3bb56, Passenger = 014a9963-d130-4940-9afe-4cf10fa0f496 added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = ccce462a-ef57-411d-a14b-a8873b16e9da, Cargo = Cargo{id = 9dff8830-b460-454e-aa4d-49b47788dbe4, type = SOLID, weight = 2} added
+2021-04-19 01:38:31 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = ccce462a-ef57-411d-a14b-a8873b16e9da, Cargo = Cargo{id = 9dff8830-b460-454e-aa4d-49b47788dbe4, type = SOLID, weight = 2} uploaded
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = ccce462a-ef57-411d-a14b-a8873b16e9da, Cargo = Cargo{id = 7bf3decf-02ba-48f9-9a4f-cc1bd564257e, type = GAS, weight = 4} added
+2021-04-19 01:38:31 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = ccce462a-ef57-411d-a14b-a8873b16e9da, Cargo = Cargo{id = 7bf3decf-02ba-48f9-9a4f-cc1bd564257e, type = GAS, weight = 4} uploaded
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = ccce462a-ef57-411d-a14b-a8873b16e9da, Cargo = Cargo{id = 4262c301-b521-4d5f-accf-edcb19c8ead6, type = FLUID, weight = 6} added
+2021-04-19 01:38:31 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = ccce462a-ef57-411d-a14b-a8873b16e9da, Cargo = Cargo{id = 4262c301-b521-4d5f-accf-edcb19c8ead6, type = FLUID, weight = 6} uploaded
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 3156ff74-07b9-46b2-a97e-5a3b5b1098ae, Cargo = Cargo{id = 9d274511-6985-471f-8a2d-8caec95c1edb, type = SOLID, weight = 2} added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 3156ff74-07b9-46b2-a97e-5a3b5b1098ae, Cargo = Cargo{id = 5465758e-5fcd-4c77-a305-b69662e7f5d2, type = GAS, weight = 4} added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 3156ff74-07b9-46b2-a97e-5a3b5b1098ae, Cargo = Cargo{id = 8f15846d-c202-4f32-9002-c980949c4231, type = FLUID, weight = 6} added
+2021-04-19 01:38:31 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 3156ff74-07b9-46b2-a97e-5a3b5b1098ae, Cargo = Cargo{id = 9d274511-6985-471f-8a2d-8caec95c1edb, type = SOLID, weight = 2} uploaded
+2021-04-19 01:38:31 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 3156ff74-07b9-46b2-a97e-5a3b5b1098ae, Cargo = Cargo{id = 5465758e-5fcd-4c77-a305-b69662e7f5d2, type = GAS, weight = 4} uploaded
+2021-04-19 01:38:31 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 3156ff74-07b9-46b2-a97e-5a3b5b1098ae, Cargo = Cargo{id = 8f15846d-c202-4f32-9002-c980949c4231, type = FLUID, weight = 6} uploaded
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 5ebcf8fc-f6c4-4ce4-a76e-b92bc8bc33bf, Passenger = aebd7843-d6ae-4121-8331-63560c74b035 added
+2021-04-19 01:38:31 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 5ebcf8fc-f6c4-4ce4-a76e-b92bc8bc33bf, Passenger = aebd7843-d6ae-4121-8331-63560c74b035 dropped
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 5ebcf8fc-f6c4-4ce4-a76e-b92bc8bc33bf, Passenger = 6edf0e7f-91ad-447a-99f7-241c304e64e4 added
+2021-04-19 01:38:31 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 5ebcf8fc-f6c4-4ce4-a76e-b92bc8bc33bf, Passenger = 6edf0e7f-91ad-447a-99f7-241c304e64e4 dropped
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 5ebcf8fc-f6c4-4ce4-a76e-b92bc8bc33bf, Passenger = 296947fc-1165-4756-9f0b-39b08a8f9636 added
+2021-04-19 01:38:31 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 5ebcf8fc-f6c4-4ce4-a76e-b92bc8bc33bf, Passenger = 296947fc-1165-4756-9f0b-39b08a8f9636 dropped
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 8c3992b7-58c6-40c6-810a-739531457bc4, Passenger = cc2788a6-1013-4195-9631-2b1d9ea1c9d6 added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 8c3992b7-58c6-40c6-810a-739531457bc4, Passenger = 2bdb189b-c132-4d07-a227-fd2cacfc64d4 added
+2021-04-19 01:38:31 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 8c3992b7-58c6-40c6-810a-739531457bc4, Passenger = c32eb14b-83bf-404e-9eb5-0c9bef035b99 added
+2021-04-19 01:38:31 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 8c3992b7-58c6-40c6-810a-739531457bc4, Passenger = cc2788a6-1013-4195-9631-2b1d9ea1c9d6 dropped
+2021-04-19 01:38:31 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 8c3992b7-58c6-40c6-810a-739531457bc4, Passenger = 2bdb189b-c132-4d07-a227-fd2cacfc64d4 dropped
+2021-04-19 01:38:31 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 8c3992b7-58c6-40c6-810a-739531457bc4, Passenger = c32eb14b-83bf-404e-9eb5-0c9bef035b99 dropped
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 55eaee2b-5060-46cb-8be7-826eb63d2bbd, Cargo = Cargo{id = 678ab871-280e-4e58-8bf1-36c99d20b97d, type = SOLID, weight = 2} added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 55eaee2b-5060-46cb-8be7-826eb63d2bbd, Cargo = Cargo{id = 743f2a89-daa7-413a-87af-fc057b8161e4, type = GAS, weight = 4} added
+2021-04-19 01:38:31 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 55eaee2b-5060-46cb-8be7-826eb63d2bbd, Cargo = Cargo{id = 55cafb5e-78d1-47f3-8ba9-2e7a49e94a3d, type = FLUID, weight = 6} added
+2021-04-19 02:49:24 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriage = 79878f10-8182-43d9-a952-5d13c1f90437 added to train
+2021-04-19 02:49:24 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriage = c7cf4458-9957-4a56-96d1-ddf6072b7861 added to train
+2021-04-19 02:49:24 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriage = e8b845e8-e2cc-43d5-aa5f-1e34d2c659c9 added to train
+2021-04-19 02:49:24 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriage = 2454ad21-ef6d-4ce1-917c-6c2976de7825 added to train
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 21eaf018-8231-47be-afba-604ba9897ac4, Cargo = Cargo{id = b02c811f-8920-484d-bd1f-54395970a585, type = SOLID, weight = 2} added
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2b3ab3e4-fade-4cb8-9990-f7332da38041, Cargo = Cargo{id = d443e6db-63ad-478f-b783-ce70861a85dd, type = GAS, weight = 4} added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 05e9f759-cbfd-4cf6-8a49-559c71979d53, Passenger = 1da3d1e5-5531-4d0f-83c5-805fa18a5e1d added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 05e9f759-cbfd-4cf6-8a49-559c71979d53, Passenger = c3931565-e0e4-458a-8fdd-bb28e69538b1 added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 05e9f759-cbfd-4cf6-8a49-559c71979d53, Passenger = dcd59753-5fb5-4131-869a-1f0a9a9f780c added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 45140372-2ea2-42c3-b359-3e10b7c7fc13, Passenger = 6ef3e359-aee4-4f3a-844b-398c3ca98d1b added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 45140372-2ea2-42c3-b359-3e10b7c7fc13, Passenger = 669e85e2-2906-4840-8805-444b0d913304 added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 45140372-2ea2-42c3-b359-3e10b7c7fc13, Passenger = e56d8891-274a-484b-a819-8f0769a698ae added
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = f23a98aa-b775-4748-91c4-0e96b57e2bb7, Cargo = Cargo{id = 017f9564-11a0-4d10-a714-9cb6ce217d4a, type = SOLID, weight = 8} added
+2021-04-19 02:49:24 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = f23a98aa-b775-4748-91c4-0e96b57e2bb7, Cargo = Cargo{id = 017f9564-11a0-4d10-a714-9cb6ce217d4a, type = SOLID, weight = 8} uploaded
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = f23a98aa-b775-4748-91c4-0e96b57e2bb7, Cargo = Cargo{id = d3ec8ff0-a9f1-4a11-ad00-8b48cc17f47a, type = GAS, weight = 15} added
+2021-04-19 02:49:24 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = f23a98aa-b775-4748-91c4-0e96b57e2bb7, Cargo = Cargo{id = d3ec8ff0-a9f1-4a11-ad00-8b48cc17f47a, type = GAS, weight = 15} uploaded
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = f23a98aa-b775-4748-91c4-0e96b57e2bb7, Cargo = Cargo{id = 895f6042-eafc-4913-9c46-3bd0380b5a4f, type = FLUID, weight = 4} added
+2021-04-19 02:49:24 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = f23a98aa-b775-4748-91c4-0e96b57e2bb7, Cargo = Cargo{id = 895f6042-eafc-4913-9c46-3bd0380b5a4f, type = FLUID, weight = 4} uploaded
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 44c198fd-277a-430f-9a9f-c86f3d1e8eb5, Cargo = Cargo{id = 906fa11c-26d7-47a3-928f-53c2d5b84a43, type = SOLID, weight = 8} added
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 44c198fd-277a-430f-9a9f-c86f3d1e8eb5, Cargo = Cargo{id = 0ef5e679-cae9-4769-a730-846f73d3383f, type = GAS, weight = 15} added
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 44c198fd-277a-430f-9a9f-c86f3d1e8eb5, Cargo = Cargo{id = fccfe6c6-b382-49d8-b09e-2ff42ed70d60, type = FLUID, weight = 4} added
+2021-04-19 02:49:24 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 44c198fd-277a-430f-9a9f-c86f3d1e8eb5, Cargo = Cargo{id = 906fa11c-26d7-47a3-928f-53c2d5b84a43, type = SOLID, weight = 8} uploaded
+2021-04-19 02:49:24 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 44c198fd-277a-430f-9a9f-c86f3d1e8eb5, Cargo = Cargo{id = 0ef5e679-cae9-4769-a730-846f73d3383f, type = GAS, weight = 15} uploaded
+2021-04-19 02:49:24 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 44c198fd-277a-430f-9a9f-c86f3d1e8eb5, Cargo = Cargo{id = fccfe6c6-b382-49d8-b09e-2ff42ed70d60, type = FLUID, weight = 4} uploaded
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 1115066f-08d7-47cc-a3f9-ee9d8404c9b6, Passenger = 35e9afdd-fc1f-4797-81f1-f517f3695bbc added
+2021-04-19 02:49:24 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 1115066f-08d7-47cc-a3f9-ee9d8404c9b6, Passenger = 35e9afdd-fc1f-4797-81f1-f517f3695bbc dropped
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 1115066f-08d7-47cc-a3f9-ee9d8404c9b6, Passenger = fa2837ae-45de-4c15-8d48-407a999a7e3d added
+2021-04-19 02:49:24 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 1115066f-08d7-47cc-a3f9-ee9d8404c9b6, Passenger = fa2837ae-45de-4c15-8d48-407a999a7e3d dropped
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 1115066f-08d7-47cc-a3f9-ee9d8404c9b6, Passenger = 8d9fd7f5-f728-401d-a3f6-60ec224d2006 added
+2021-04-19 02:49:24 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 1115066f-08d7-47cc-a3f9-ee9d8404c9b6, Passenger = 8d9fd7f5-f728-401d-a3f6-60ec224d2006 dropped
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 485be74e-dd26-46c1-9e8e-a624f1281c9f, Passenger = 892fa3c1-f4bb-47c2-bc63-542db7d48004 added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 485be74e-dd26-46c1-9e8e-a624f1281c9f, Passenger = 9f33fdb8-5484-4362-8770-6bd387d4aeb7 added
+2021-04-19 02:49:24 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 485be74e-dd26-46c1-9e8e-a624f1281c9f, Passenger = 6ff41844-063b-4088-8f13-a2517a1f4a44 added
+2021-04-19 02:49:24 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 485be74e-dd26-46c1-9e8e-a624f1281c9f, Passenger = 892fa3c1-f4bb-47c2-bc63-542db7d48004 dropped
+2021-04-19 02:49:24 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 485be74e-dd26-46c1-9e8e-a624f1281c9f, Passenger = 9f33fdb8-5484-4362-8770-6bd387d4aeb7 dropped
+2021-04-19 02:49:24 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 485be74e-dd26-46c1-9e8e-a624f1281c9f, Passenger = 6ff41844-063b-4088-8f13-a2517a1f4a44 dropped
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 179c2bcf-1c47-468b-a816-4f7c66bde010, Cargo = Cargo{id = b870b58e-c1a7-4098-8d8d-8396de887a89, type = SOLID, weight = 2} added
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 179c2bcf-1c47-468b-a816-4f7c66bde010, Cargo = Cargo{id = b6a358de-a40a-4316-9d21-8d143160d6e1, type = GAS, weight = 4} added
+2021-04-19 02:49:24 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 179c2bcf-1c47-468b-a816-4f7c66bde010, Cargo = Cargo{id = 6fb94a30-a69d-424c-b29f-214d1b7e490a, type = FLUID, weight = 6} added
+2021-04-19 02:51:19 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriage = 4c7c8787-1c26-4322-84fb-fac173bd8fe7 added to train
+2021-04-19 02:51:19 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriage = 28164382-1e2c-46a2-9784-abb629361ee7 added to train
+2021-04-19 02:51:19 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriage = 952295c6-c958-4415-b293-8173cfd970a7 added to train
+2021-04-19 02:51:19 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriage = 814c28fe-cc46-462c-b47d-df64e22bc1c3 added to train
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 4363771a-6383-4b6d-a0f8-fdcb8e626ce5, Cargo = Cargo{id = 3b849130-51bc-42f7-a538-e692dcef96f4, type = SOLID, weight = 2} added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = af3ad307-373b-414f-a568-f798e5352723, Cargo = Cargo{id = 1de3c22b-f484-44cb-a78c-6fd8e4f82dc9, type = GAS, weight = 4} added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 5af53862-2a78-4cec-8972-92a7e07005d5, Cargo = Cargo{id = 23ce4a23-62ca-4a73-a010-b771a81143ec, type = FLUID, weight = 6} added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 2e0416a1-bd94-42a6-9e56-f9473a8d8d22, Passenger = 11e51bdd-cbf6-49c9-bd48-7f0cc4418113 added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 2e0416a1-bd94-42a6-9e56-f9473a8d8d22, Passenger = 61178533-c652-4c4a-ac12-3112d5688ca7 added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 2e0416a1-bd94-42a6-9e56-f9473a8d8d22, Passenger = 1ef0b3b6-a0f2-4f97-acec-f801e263ac29 added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 83ba4e09-4d9d-42e7-8c53-0e69a7f732bd, Passenger = e2d36f17-2256-491a-82dd-867c85332b37 added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 83ba4e09-4d9d-42e7-8c53-0e69a7f732bd, Passenger = 88735bb2-be57-41df-9a16-ed0aca55684c added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 83ba4e09-4d9d-42e7-8c53-0e69a7f732bd, Passenger = 0c39e9da-1d77-4df7-9948-a224964bbe2b added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 41187e9a-3b8d-4c6d-8488-606c28f9bd1c, Cargo = Cargo{id = 6924beca-9b17-4c6b-ae52-fa185a69cdef, type = SOLID, weight = 8} added
+2021-04-19 02:51:19 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 41187e9a-3b8d-4c6d-8488-606c28f9bd1c, Cargo = Cargo{id = 6924beca-9b17-4c6b-ae52-fa185a69cdef, type = SOLID, weight = 8} uploaded
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 41187e9a-3b8d-4c6d-8488-606c28f9bd1c, Cargo = Cargo{id = 1a9e39b3-3554-4d0b-8398-8fa197adb324, type = GAS, weight = 15} added
+2021-04-19 02:51:19 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 41187e9a-3b8d-4c6d-8488-606c28f9bd1c, Cargo = Cargo{id = 1a9e39b3-3554-4d0b-8398-8fa197adb324, type = GAS, weight = 15} uploaded
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 41187e9a-3b8d-4c6d-8488-606c28f9bd1c, Cargo = Cargo{id = 7eb1f3b3-97bb-4f21-a55a-784cf9413629, type = FLUID, weight = 4} added
+2021-04-19 02:51:19 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 41187e9a-3b8d-4c6d-8488-606c28f9bd1c, Cargo = Cargo{id = 7eb1f3b3-97bb-4f21-a55a-784cf9413629, type = FLUID, weight = 4} uploaded
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 7401c9b3-1b83-4dcd-a055-50955003403d, Cargo = Cargo{id = 889af537-e640-4799-ba99-172fa7302490, type = SOLID, weight = 8} added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 7401c9b3-1b83-4dcd-a055-50955003403d, Cargo = Cargo{id = c75fb682-957d-40c2-a3c8-4e82eb87f284, type = GAS, weight = 15} added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 7401c9b3-1b83-4dcd-a055-50955003403d, Cargo = Cargo{id = ef320475-f085-4baf-939f-b6dad2df880a, type = FLUID, weight = 4} added
+2021-04-19 02:51:19 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 7401c9b3-1b83-4dcd-a055-50955003403d, Cargo = Cargo{id = 889af537-e640-4799-ba99-172fa7302490, type = SOLID, weight = 8} uploaded
+2021-04-19 02:51:19 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 7401c9b3-1b83-4dcd-a055-50955003403d, Cargo = Cargo{id = c75fb682-957d-40c2-a3c8-4e82eb87f284, type = GAS, weight = 15} uploaded
+2021-04-19 02:51:19 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 7401c9b3-1b83-4dcd-a055-50955003403d, Cargo = Cargo{id = ef320475-f085-4baf-939f-b6dad2df880a, type = FLUID, weight = 4} uploaded
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 96ed934e-78bf-4f63-92f9-38aa11fbfb1c, Passenger = 14a915ce-5691-4e9d-9f8c-99af52938568 added
+2021-04-19 02:51:19 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 96ed934e-78bf-4f63-92f9-38aa11fbfb1c, Passenger = 14a915ce-5691-4e9d-9f8c-99af52938568 dropped
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 96ed934e-78bf-4f63-92f9-38aa11fbfb1c, Passenger = 81f8dd93-97b0-4917-9d36-db32b76d4e2c added
+2021-04-19 02:51:19 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 96ed934e-78bf-4f63-92f9-38aa11fbfb1c, Passenger = 81f8dd93-97b0-4917-9d36-db32b76d4e2c dropped
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 96ed934e-78bf-4f63-92f9-38aa11fbfb1c, Passenger = 373b3776-f8bf-476a-97b6-cf7c578ca6cb added
+2021-04-19 02:51:19 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = 96ed934e-78bf-4f63-92f9-38aa11fbfb1c, Passenger = 373b3776-f8bf-476a-97b6-cf7c578ca6cb dropped
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = f7b26a35-a584-4263-9502-b24b5cc41ad9, Passenger = 6603a063-034a-41f7-8e42-2554c6e330a0 added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = f7b26a35-a584-4263-9502-b24b5cc41ad9, Passenger = 7ee97626-b527-40eb-a56f-796a4047f069 added
+2021-04-19 02:51:19 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = f7b26a35-a584-4263-9502-b24b5cc41ad9, Passenger = d0ae4f3d-d9b9-48a1-b507-91e2b9c7eb16 added
+2021-04-19 02:51:19 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = f7b26a35-a584-4263-9502-b24b5cc41ad9, Passenger = 6603a063-034a-41f7-8e42-2554c6e330a0 dropped
+2021-04-19 02:51:19 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = f7b26a35-a584-4263-9502-b24b5cc41ad9, Passenger = 7ee97626-b527-40eb-a56f-796a4047f069 dropped
+2021-04-19 02:51:19 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = f7b26a35-a584-4263-9502-b24b5cc41ad9, Passenger = d0ae4f3d-d9b9-48a1-b507-91e2b9c7eb16 dropped
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 65045c50-7c31-467c-8bbb-db9a573144cf, Cargo = Cargo{id = 4e54b2be-c8ca-41ca-a8c6-165a5b050640, type = SOLID, weight = 2} added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 65045c50-7c31-467c-8bbb-db9a573144cf, Cargo = Cargo{id = 15629aac-6a29-4c56-9d5a-a9f8107aeeff, type = GAS, weight = 4} added
+2021-04-19 02:51:19 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 65045c50-7c31-467c-8bbb-db9a573144cf, Cargo = Cargo{id = 3593b5f3-8648-49f3-9ec0-9a22b4cd7159, type = FLUID, weight = 6} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 3d17c222-84b3-44d0-810a-fb9edaffc223, Cargo = Cargo{id = 4f4d987d-ac82-47c2-92b9-169b498e6e03, type = SOLID, weight = 2} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = e1d88445-bc6b-4dbf-b243-413687a0017a, Cargo = Cargo{id = 4fa9599d-f485-41d3-bb60-b294ef5d8131, type = GAS, weight = 4} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = b010a0aa-ae38-4bd3-894c-2297e5cb38df, Cargo = Cargo{id = 5e8c9634-6f5f-4d24-8713-4eef4db0b952, type = FLUID, weight = 6} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2327ec90-1a19-41bb-b215-b82328c8c088, Cargo = Cargo{id = 62d5b0b1-359b-478f-9b4e-6c899866473a, type = SOLID, weight = 2} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2327ec90-1a19-41bb-b215-b82328c8c088, Cargo = Cargo{id = d70f7fae-7734-4d73-87db-94eca1a98f8f, type = GAS, weight = 4} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2327ec90-1a19-41bb-b215-b82328c8c088, Cargo = Cargo{id = 717a7abc-6dc6-41e7-9df4-29bda840c3e7, type = FLUID, weight = 6} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 748d8d12-b4c8-4a90-bb1b-d782bcb2b792, Cargo = Cargo{id = 122384ca-fe54-4768-983e-90e6c6525189, type = SOLID, weight = 8} added
+2021-04-19 02:52:01 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 748d8d12-b4c8-4a90-bb1b-d782bcb2b792, Cargo = Cargo{id = 122384ca-fe54-4768-983e-90e6c6525189, type = SOLID, weight = 8} uploaded
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 748d8d12-b4c8-4a90-bb1b-d782bcb2b792, Cargo = Cargo{id = e4d63086-3d49-4cd0-8077-3dda4acb0082, type = GAS, weight = 15} added
+2021-04-19 02:52:01 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 748d8d12-b4c8-4a90-bb1b-d782bcb2b792, Cargo = Cargo{id = e4d63086-3d49-4cd0-8077-3dda4acb0082, type = GAS, weight = 15} uploaded
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 748d8d12-b4c8-4a90-bb1b-d782bcb2b792, Cargo = Cargo{id = 129f6e6f-6af9-4c8f-9e98-c7e207d676b2, type = FLUID, weight = 4} added
+2021-04-19 02:52:01 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 748d8d12-b4c8-4a90-bb1b-d782bcb2b792, Cargo = Cargo{id = 129f6e6f-6af9-4c8f-9e98-c7e207d676b2, type = FLUID, weight = 4} uploaded
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 5e8bd795-fe98-4594-a987-43b2131ab3b4, Cargo = Cargo{id = 509f9cfb-c226-4337-b3e7-c81d8fe99b58, type = SOLID, weight = 8} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 5e8bd795-fe98-4594-a987-43b2131ab3b4, Cargo = Cargo{id = 4b69625a-c5d6-4f83-9880-c9c1ce7d79cc, type = GAS, weight = 15} added
+2021-04-19 02:52:01 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 5e8bd795-fe98-4594-a987-43b2131ab3b4, Cargo = Cargo{id = c8ec853a-cfd8-43ac-920e-c30c46630cbd, type = FLUID, weight = 4} added
+2021-04-19 02:52:01 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 5e8bd795-fe98-4594-a987-43b2131ab3b4, Cargo = Cargo{id = 509f9cfb-c226-4337-b3e7-c81d8fe99b58, type = SOLID, weight = 8} uploaded
+2021-04-19 02:52:01 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 5e8bd795-fe98-4594-a987-43b2131ab3b4, Cargo = Cargo{id = 4b69625a-c5d6-4f83-9880-c9c1ce7d79cc, type = GAS, weight = 15} uploaded
+2021-04-19 02:52:01 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 5e8bd795-fe98-4594-a987-43b2131ab3b4, Cargo = Cargo{id = c8ec853a-cfd8-43ac-920e-c30c46630cbd, type = FLUID, weight = 4} uploaded
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 7ba921cf-605e-473a-b7ca-e128970c1302, Passenger = afae3394-f22e-4df3-a388-c4ee919f1b23 added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 7ba921cf-605e-473a-b7ca-e128970c1302, Passenger = 326724d0-eb89-453d-88b9-6ff63c320b7e added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = 7ba921cf-605e-473a-b7ca-e128970c1302, Passenger = 98044f99-7935-44fc-99f5-a3a34f1a83b3 added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = c8e893e4-0178-401b-be1b-353962b1ef11, Passenger = 10d37fb5-12d3-4e5e-8a47-6ed2c77e0c3d added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = c8e893e4-0178-401b-be1b-353962b1ef11, Passenger = 3a3b65fe-f365-47d3-861a-aca2dfc485ee added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = c8e893e4-0178-401b-be1b-353962b1ef11, Passenger = edb53195-1b7a-4029-97b3-810774768c71 added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = fde4391e-1151-4a4b-ac09-8df5cf310827, Passenger = 9c797f54-54fc-4a57-95af-5e68c6d543f2 added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = fde4391e-1151-4a4b-ac09-8df5cf310827, Passenger = 11defcdd-1293-4a52-aa97-20241733f8e3 added
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = fde4391e-1151-4a4b-ac09-8df5cf310827, Passenger = 9e0a8814-7e35-45a0-a841-333901de4af8 added
+2021-04-19 02:52:01 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = fde4391e-1151-4a4b-ac09-8df5cf310827, Passenger = 9c797f54-54fc-4a57-95af-5e68c6d543f2 dropped
+2021-04-19 02:52:01 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = fde4391e-1151-4a4b-ac09-8df5cf310827, Passenger = 11defcdd-1293-4a52-aa97-20241733f8e3 dropped
+2021-04-19 02:52:01 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = fde4391e-1151-4a4b-ac09-8df5cf310827, Passenger = 9e0a8814-7e35-45a0-a841-333901de4af8 dropped
+2021-04-19 02:52:01 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriage = 04db9455-7e5f-4d72-a5b1-baff46c30936 added to train
+2021-04-19 02:52:01 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriage = e692b62f-d4ab-4522-bcb2-cc182dcbec54 added to train
+2021-04-19 02:52:01 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriage = 9f25248e-c32e-4054-871a-b32cbfb374d7 added to train
+2021-04-19 02:52:01 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriage = 6cb671b1-ac74-4439-ab22-06c1a7407078 added to train
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = a0be747d-2c60-4cae-a2cb-9e239eb83a71, Passenger = cf2e5945-230d-4a97-ba89-6b664683eb5d added
+2021-04-19 02:52:01 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = a0be747d-2c60-4cae-a2cb-9e239eb83a71, Passenger = cf2e5945-230d-4a97-ba89-6b664683eb5d dropped
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = a0be747d-2c60-4cae-a2cb-9e239eb83a71, Passenger = d46731d4-cf5e-4697-80eb-989f202bd4ab added
+2021-04-19 02:52:01 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = a0be747d-2c60-4cae-a2cb-9e239eb83a71, Passenger = d46731d4-cf5e-4697-80eb-989f202bd4ab dropped
+2021-04-19 02:52:01 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = a0be747d-2c60-4cae-a2cb-9e239eb83a71, Passenger = 92972be7-1637-4b10-a6d8-8a87fda5fab8 added
+2021-04-19 02:52:01 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = a0be747d-2c60-4cae-a2cb-9e239eb83a71, Passenger = 92972be7-1637-4b10-a6d8-8a87fda5fab8 dropped
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 63180b74-3839-434d-b14b-e0df342f7b12, Cargo = Cargo{id = a5b9959c-68a7-47a0-8c06-3fdde14864a1, type = SOLID, weight = 2} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 79136962-74e1-4806-83fa-08b76a25afe3, Cargo = Cargo{id = 346332da-2169-4f37-b02a-3965b52a550f, type = GAS, weight = 4} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = e5d20fd5-b7c6-40b5-ad73-81c6820a841b, Cargo = Cargo{id = a5a930e2-f96d-49b9-b107-2c969ab4bb22, type = FLUID, weight = 6} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = d94380b4-29cc-40d2-b21b-8e8acd038052, Cargo = Cargo{id = 7c3b84ea-b8db-4521-8552-99e35c981e23, type = SOLID, weight = 2} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = d94380b4-29cc-40d2-b21b-8e8acd038052, Cargo = Cargo{id = 04c7fda7-6bb7-4f2e-8937-0e5a57c4d28f, type = GAS, weight = 4} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = d94380b4-29cc-40d2-b21b-8e8acd038052, Cargo = Cargo{id = edcdf4d1-d2be-41fc-bdc6-ce0d8a7f5121, type = FLUID, weight = 6} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2dfc366a-50b1-485a-818b-c70eac8c41d9, Cargo = Cargo{id = 4a677dcd-5dd6-45b8-ab55-efd5d9dcc288, type = SOLID, weight = 8} added
+2021-04-19 03:05:57 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 2dfc366a-50b1-485a-818b-c70eac8c41d9, Cargo = Cargo{id = 4a677dcd-5dd6-45b8-ab55-efd5d9dcc288, type = SOLID, weight = 8} uploaded
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2dfc366a-50b1-485a-818b-c70eac8c41d9, Cargo = Cargo{id = cc515851-40fb-444e-add5-0617538b93fc, type = GAS, weight = 15} added
+2021-04-19 03:05:57 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 2dfc366a-50b1-485a-818b-c70eac8c41d9, Cargo = Cargo{id = cc515851-40fb-444e-add5-0617538b93fc, type = GAS, weight = 15} uploaded
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 2dfc366a-50b1-485a-818b-c70eac8c41d9, Cargo = Cargo{id = eaf53d84-13bf-488c-af67-13a99858f416, type = FLUID, weight = 4} added
+2021-04-19 03:05:57 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 2dfc366a-50b1-485a-818b-c70eac8c41d9, Cargo = Cargo{id = eaf53d84-13bf-488c-af67-13a99858f416, type = FLUID, weight = 4} uploaded
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 59ab280b-6649-4b1a-a865-14d450fdaae5, Cargo = Cargo{id = f5ba932a-caa0-4251-a894-b9d396bfe3e3, type = SOLID, weight = 8} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 59ab280b-6649-4b1a-a865-14d450fdaae5, Cargo = Cargo{id = c71ebc43-3a60-43d8-bfb6-619c037d6878, type = GAS, weight = 15} added
+2021-04-19 03:05:57 INFO  TrainImpl:145 - class by.issoft.sample.domain.CargoCarriage = 59ab280b-6649-4b1a-a865-14d450fdaae5, Cargo = Cargo{id = ea4d71bf-212d-4fc0-80ec-55dbe008cff0, type = FLUID, weight = 4} added
+2021-04-19 03:05:57 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 59ab280b-6649-4b1a-a865-14d450fdaae5, Cargo = Cargo{id = f5ba932a-caa0-4251-a894-b9d396bfe3e3, type = SOLID, weight = 8} uploaded
+2021-04-19 03:05:57 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 59ab280b-6649-4b1a-a865-14d450fdaae5, Cargo = Cargo{id = c71ebc43-3a60-43d8-bfb6-619c037d6878, type = GAS, weight = 15} uploaded
+2021-04-19 03:05:57 INFO  TrainImpl:179 - class by.issoft.sample.domain.CargoCarriage = 59ab280b-6649-4b1a-a865-14d450fdaae5, Cargo = Cargo{id = ea4d71bf-212d-4fc0-80ec-55dbe008cff0, type = FLUID, weight = 4} uploaded
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = d5e6a403-6d86-41a2-b98f-eeb0656ced78, Passenger = bbccd30e-f63d-4c9c-b545-4774ac6369c2 added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = d5e6a403-6d86-41a2-b98f-eeb0656ced78, Passenger = 01d39a18-a392-4d40-abc9-9b203dd8203c added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = d5e6a403-6d86-41a2-b98f-eeb0656ced78, Passenger = 7ea65002-a60a-4111-a451-495a19fbcea8 added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = b2e2ab28-0f0b-408c-b26c-88558aec99ab, Passenger = c1824d80-ba6a-4422-83fe-e74dccc46014 added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = b2e2ab28-0f0b-408c-b26c-88558aec99ab, Passenger = 55564411-c23a-4087-9b2a-f60fb1d0f188 added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = b2e2ab28-0f0b-408c-b26c-88558aec99ab, Passenger = f6529653-fdbd-4280-8160-8075fa3542f3 added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = d5d7371b-24ec-4ec9-8ac8-94462e6b6c98, Passenger = 58725503-4a65-42f9-9361-0fb26ae2e16d added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = d5d7371b-24ec-4ec9-8ac8-94462e6b6c98, Passenger = ae6493e6-6e8e-4ef8-b057-bb1703db81b7 added
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = d5d7371b-24ec-4ec9-8ac8-94462e6b6c98, Passenger = 6ad24425-db6f-42f5-9f3c-fba646fe8a9f added
+2021-04-19 03:05:57 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = d5d7371b-24ec-4ec9-8ac8-94462e6b6c98, Passenger = 58725503-4a65-42f9-9361-0fb26ae2e16d dropped
+2021-04-19 03:05:57 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = d5d7371b-24ec-4ec9-8ac8-94462e6b6c98, Passenger = ae6493e6-6e8e-4ef8-b057-bb1703db81b7 dropped
+2021-04-19 03:05:57 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = d5d7371b-24ec-4ec9-8ac8-94462e6b6c98, Passenger = 6ad24425-db6f-42f5-9f3c-fba646fe8a9f dropped
+2021-04-19 03:05:57 INFO  TrainImpl:70 - class by.issoft.sample.domain.CargoCarriage = eb753d23-50b2-45ac-af6e-714c084ad044 added to train
+2021-04-19 03:05:57 INFO  TrainImpl:70 - class by.issoft.sample.domain.PassengerCarriage = 502d41ec-3acc-4ea5-a9f0-92bafc255e91 added to train
+2021-04-19 03:05:57 INFO  TrainImpl:74 - class by.issoft.sample.domain.CargoCarriage = b48caaf5-ea84-4ec4-b027-520eb8337c55 added to train
+2021-04-19 03:05:57 INFO  TrainImpl:74 - class by.issoft.sample.domain.PassengerCarriage = e2f4ffd9-d9fd-4d39-ab45-4fc3136a0f59 added to train
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = e4cdd47e-ddc2-44c9-9639-5d082478ce54, Passenger = 4231c067-459e-45ff-bced-0701962be279 added
+2021-04-19 03:05:57 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = e4cdd47e-ddc2-44c9-9639-5d082478ce54, Passenger = 4231c067-459e-45ff-bced-0701962be279 dropped
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = e4cdd47e-ddc2-44c9-9639-5d082478ce54, Passenger = 6280cfb6-75bc-4f90-b1b7-36c5069dcebe added
+2021-04-19 03:05:57 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = e4cdd47e-ddc2-44c9-9639-5d082478ce54, Passenger = 6280cfb6-75bc-4f90-b1b7-36c5069dcebe dropped
+2021-04-19 03:05:57 INFO  TrainImpl:196 - class by.issoft.sample.domain.PassengerCarriage = e4cdd47e-ddc2-44c9-9639-5d082478ce54, Passenger = 399dfa5b-fbc2-4b49-9916-f677dacf2ce7 added
+2021-04-19 03:05:57 INFO  TrainImpl:214 - class by.issoft.sample.domain.PassengerCarriage = e4cdd47e-ddc2-44c9-9639-5d082478ce54, Passenger = 399dfa5b-fbc2-4b49-9916-f677dacf2ce7 dropped

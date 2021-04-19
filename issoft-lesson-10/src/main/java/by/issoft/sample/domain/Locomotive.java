@@ -4,11 +4,11 @@ import java.util.UUID;
 
 public class Locomotive {
 
-    final private String id;
+    private final String id;
 
-    final private int traction;
+    private final int traction;
 
-    final private int lifeTime;
+    private final int lifeTime;
 
     private Driver driver;
 
@@ -54,7 +54,7 @@ public class Locomotive {
     @Override
     public String toString() {
         return String.format("Locomotive{id = %s, traction = %d, lifetime = %d, driver = %s}",
-                id, traction, lifeTime, driver.getId());
+                id, traction, lifeTime, driver.getUser().getId());
     }
 
 }

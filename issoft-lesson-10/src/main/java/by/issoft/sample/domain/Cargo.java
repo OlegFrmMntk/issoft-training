@@ -5,11 +5,11 @@ import java.util.UUID;
 
 public class Cargo {
 
-    final private String id;
+    private final String id;
 
-    final private CargoType type;
+    private final CargoType type;
 
-    final private int weight;
+    private final int weight;
 
     public Cargo(int weight) {
         this(CargoType.SOLID, weight);

@@ -1,9 +1,7 @@
 package by.issoft.sample.domain;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import java.util.Date;
 import java.util.List;
@@ -12,111 +10,70 @@ import static org.junit.Assert.*;
 
 public class TrainImplTest {
 
-    @Mock
-    private TrainImpl firstTrain;
-
-    @Mock
-    private TrainImpl secondTrain;
-
-    @Mock
-    private Locomotive locomotive;
-
-    @Mock
-    private Carriage firstCarriage;
-
-    @Mock
-    private Carriage secondCarriage;
-
-    @Mock
-    private Carriage thirdCarriage;
-
-    @Mock
-    private Carriage fourthCarriage;
-
-    @Mock
-    private Carriage fifthCarriage;
-
-    @Mock
-    private List<Cargo> cargos;
-
-    @Mock
-    private List<Passenger> passengers;
-
-    @Before
-    public void createData() {
-
-        cargos = List.of(Cargo.of(CargoType.SOLID, 2), Cargo.of(CargoType.GAS, 4),
-                Cargo.of(CargoType.FLUID, 6));
-
-        passengers = List.of(
-                Passenger.of("Kirill", "Kaban", Age.of(20),
-                        Ticket.of("Minsk", "Grodno", new Date(), 2, 11)),
-                Passenger.of("Alex", "Kasper", Age.of(57),
-                        Ticket.of("Minsk", "Grodno", new Date(), 2, 12)),
-                Passenger.of("Nikita", "Gurumin", Age.of(40),
-                        Ticket.of("Minsk", "Grodno", new Date(), 2, 13)));
-
-        firstCarriage = new CargoCarriageImpl(50,
-                List.of(new Cargo(21), new Cargo(CargoType.GAS, 2)));
-
-        secondCarriage = new PassengerCarriageImpl(50,
-                List.of(Passenger.of("Alex", "Kondrashov", Age.of(40),
-                Ticket.of("Minsk", "Grodno", new Date(), 1, 1))));
-
-        thirdCarriage = new CargoCarriageImpl(80,
-                List.of(new Cargo(CargoType.FLUID, 5), new Cargo(15)));
-
-        fourthCarriage = new PassengerCarriageImpl(50,
-                List.of(Passenger.of("Ivan", "Ivanov", Age.of(40),
-                        Ticket.of("Minsk", "Grodno", new Date(), 4, 1))));
-
-        fifthCarriage = new CargoCarriageImpl(43);
-
-
-        locomotive = new Locomotive(400, 10,
-                Driver.of("Nikita", "Puzikov", Age.of(40), true));
-
-        firstTrain = new TrainImpl("123", locomotive, firstCarriage);
-        secondTrain = TrainImpl.of("123", locomotive, firstCarriage);
-    }
-
     @Test
     public void of() {
-        assertEquals(firstTrain.getNumber(), secondTrain.getNumber());
-        assertEquals(firstTrain.getFirstCarriage(), secondTrain.getFirstCarriage());
-        assertEquals(firstTrain.getCarriage(1), secondTrain.getCarriage(1));
-        assertEquals(firstTrain.getLocomotive(), secondTrain.getLocomotive());
+        Locomotive locomotive = new Locomotive(400, 10,
+                Driver.of(User.of("Nikita", "Puzikov", Age.of(40)), true));
 
-        assertEquals(firstTrain, secondTrain);
+        Carriage firstCarriage = new CargoCarriage(50);
+
+        TrainImpl train = new TrainImpl("123", locomotive, firstCarriage);
+
+        assertEquals(train.getFirstCarriage(), firstCarriage);
+        assertEquals(train.getLocomotive(), locomotive);
+
+        assertEquals(train, new TrainImpl("123", locomotive, firstCarriage));
     }
 
     @Test
     public void addCarriage() {
-        firstTrain.addCarriage(secondCarriage);
+        TrainImpl train = anyTrain();
 
-        assertEquals(firstTrain.getCarriage(2), secondCarriage);
+        Carriage carriage = CargoCarriage.of(30);
+        train.addCarriage(carriage);
+
+        assertEquals(train.getCarriage(2), carriage);
     }
 
     @Test
     public void addCarriages() {
-        firstTrain.addCarriages(List.of(thirdCarriage, fourthCarriage, fifthCarriage));
+        TrainImpl train = anyTrain();
 
-        assertEquals(firstTrain.getCarriage(2), thirdCarriage);
-        assertEquals(firstTrain.getCarriage(3), fourthCarriage);
-        assertEquals(firstTrain.getCarriage(4), fifthCarriage);
+        Carriage secondCarriage = PassengerCarriage.of(30);
+        Carriage thirdCarriage = CargoCarriage.of(50);
+        Carriage fourthCarriage = PassengerCarriage.of(60);
+
+        train.addCarriages(List.of(secondCarriage, thirdCarriage, fourthCarriage));
+
+        assertEquals(train.getCarriage(2), secondCarriage);
+        assertEquals(train.getCarriage(3), thirdCarriage);
+        assertEquals(train.getCarriage(4), fourthCarriage);
     }
 
     @Test
     public void loadCargo() {
-        firstCarriage.setNextCarriage(secondCarriage);
+        TrainImpl train = anyTrain();
+
+        Carriage secondCarriage = PassengerCarriage.of(30);
+        Carriage thirdCarriage = CargoCarriage.of(50);
+        Carriage fourthCarriage = PassengerCarriage.of(60);
+        Carriage fifthCarriage = CargoCarriage.of(40);
+
+        train.getFirstCarriage().setNextCarriage(secondCarriage);
         secondCarriage.setNextCarriage(thirdCarriage);
         thirdCarriage.setNextCarriage(fourthCarriage);
         fourthCarriage.setNextCarriage(fifthCarriage);
 
+        List<Cargo> cargos = List.of(
+                Cargo.of(CargoType.SOLID, 2),
+                Cargo.of(CargoType.GAS, 4),
+                Cargo.of(CargoType.FLUID, 6)
+        );
+
         int i = 1;
         for (Cargo cargo : cargos) {
-            firstTrain.loadCargo(i, cargo);
-            assertTrue(((CargoCarriageImpl) firstTrain.getCarriage(i)).contains(cargo));
+            train.loadCargo(i, cargo);
+            assertTrue(((CargoCarriage) train.getCarriage(i)).contains(cargo));
             i += 2;
         }
     }
@@ -124,101 +81,152 @@ public class TrainImplTest {
 
     @Test
     public void loadCargos() {
-        firstCarriage.setNextCarriage(secondCarriage);
-        secondCarriage.setNextCarriage(thirdCarriage);
-        thirdCarriage.setNextCarriage(fourthCarriage);
-        fourthCarriage.setNextCarriage(fifthCarriage);
+        TrainImpl train = anyTrain();
 
+        List<Cargo> cargos = List.of(
+                Cargo.of(CargoType.SOLID, 2),
+                Cargo.of(CargoType.GAS, 4),
+                Cargo.of(CargoType.FLUID, 6)
+        );
 
-        firstTrain.loadCagros(1, cargos);
+        train.loadCagros(1, cargos);
         for (Cargo cargo : cargos) {
-            assertTrue(((CargoCarriageImpl) firstTrain.getFirstCarriage()).contains(cargo));
+            assertTrue(((CargoCarriage) train.getFirstCarriage()).contains(cargo));
         }
     }
 
     @Test
     public void addPassenger() {
-        firstCarriage.setNextCarriage(secondCarriage);
-        secondCarriage.setNextCarriage(thirdCarriage);
+        TrainImpl train = anyTrain();
 
-        for (Passenger passenger : passengers) {
-            firstTrain.addPassenger(passenger);
-            assertTrue(((PassengerCarriageImpl) firstTrain.getCarriage(2)).contains(passenger));
+        Carriage secondCarriage = PassengerCarriage.of(30);
+        train.getFirstCarriage().setNextCarriage(secondCarriage);
+
+        for (Passenger passenger : anyPassengers()) {
+            train.addPassenger(passenger);
+            assertTrue(((PassengerCarriage) train.getCarriage(2)).contains(passenger));
         }
     }
 
     @Test
     public void addPassengers() {
-        firstCarriage.setNextCarriage(secondCarriage);
-        secondCarriage.setNextCarriage(thirdCarriage);
-        thirdCarriage.setNextCarriage(fourthCarriage);
-        fourthCarriage.setNextCarriage(fifthCarriage);
+        TrainImpl train = anyTrain();
 
-        firstTrain.addPassengers(passengers);
+        Carriage secondCarriage = PassengerCarriage.of(30);
+        train.getFirstCarriage().setNextCarriage(secondCarriage);
+
+        List<Passenger> passengers = anyPassengers();
+
+        train.addPassengers(passengers);
         for (Passenger passenger : passengers) {
-            assertTrue(((PassengerCarriageImpl) firstTrain.getCarriage(2)).contains(passenger));
+            assertTrue(((PassengerCarriage) train.getCarriage(2)).contains(passenger));
         }
     }
 
     @Test
     public void uploadCargo() {
+        TrainImpl train = anyTrain();
+
+        List<Cargo> cargos = List.of(Cargo.of(8),
+                                     Cargo.of(CargoType.GAS, 15),
+                                     Cargo.of(CargoType.FLUID, 4)
+                                    );
 
         for (Cargo cargo : cargos) {
-            firstTrain.loadCargo(1, cargo);
-            Assert.assertTrue(((CargoCarriageImpl) firstTrain.getCarriage(1)).contains(cargo));
+            train.loadCargo(1, cargo);
+            Assert.assertTrue(((CargoCarriage) train.getCarriage(1)).contains(cargo));
 
-            firstTrain.uploadCargo(1, cargo);
-            Assert.assertFalse(((CargoCarriageImpl) firstTrain.getCarriage(1)).contains(cargo));
+            train.uploadCargo(1, cargo);
+            Assert.assertFalse(((CargoCarriage) train.getCarriage(1)).contains(cargo));
         }
 
     }
 
     @Test
     public void uploadCargos() {
+        TrainImpl train = anyTrain();
 
-        firstTrain.loadCagros(1, cargos);
+        List<Cargo> cargos = List.of(Cargo.of(8),
+                Cargo.of(CargoType.GAS, 15),
+                Cargo.of(CargoType.FLUID, 4)
+        );
+
+        train.loadCagros(1, cargos);
         for (Cargo cargo : cargos) {
-            Assert.assertTrue(((CargoCarriageImpl) firstTrain.getCarriage(1)).contains(cargo));
+            Assert.assertTrue(((CargoCarriage) train.getCarriage(1)).contains(cargo));
         }
 
-        firstTrain.uploadCargos(1, cargos);
+        train.uploadCargos(1, cargos);
         for (Cargo cargo : cargos) {
-            Assert.assertFalse(((CargoCarriageImpl) firstTrain.getCarriage(1)).contains(cargo));
+            Assert.assertFalse(((CargoCarriage) train.getCarriage(1)).contains(cargo));
         }
-
     }
 
     @Test
     public void dropOfPassenger() {
-        firstCarriage.setNextCarriage(secondCarriage);
+        TrainImpl train = anyTrain();
+
+        Carriage secondCarriage = PassengerCarriage.of(30);
+        Carriage thirdCarriage = CargoCarriage.of(50);
+        Carriage fourthCarriage = PassengerCarriage.of(60);
+
+        train.getFirstCarriage().setNextCarriage(secondCarriage);
         secondCarriage.setNextCarriage(thirdCarriage);
         thirdCarriage.setNextCarriage(fourthCarriage);
-        fourthCarriage.setNextCarriage(fifthCarriage);
+
+        List<Passenger> passengers = anyPassengers();
 
         for (Passenger passenger : passengers) {
-            firstTrain.addPassenger(passenger);
-            Assert.assertTrue(((PassengerCarriageImpl) firstTrain.getCarriage(2)).contains(passenger));
+            train.addPassenger(passenger);
+            Assert.assertTrue(((PassengerCarriage) train.getCarriage(2)).contains(passenger));
 
-            firstTrain.dropOfPassenger(passenger);
-            Assert.assertFalse(((PassengerCarriageImpl) firstTrain.getCarriage(2)).contains(passenger));
+            train.dropOfPassenger(passenger);
+            Assert.assertFalse(((PassengerCarriage) train.getCarriage(2)).contains(passenger));
         }
     }
 
     @Test
     public void dropOfPassengers() {
-        firstCarriage.setNextCarriage(secondCarriage);
+        TrainImpl train = anyTrain();
+
+        Carriage secondCarriage = PassengerCarriage.of(30);
+        Carriage thirdCarriage = CargoCarriage.of(50);
+        Carriage fourthCarriage = PassengerCarriage.of(60);
+
+        train.getFirstCarriage().setNextCarriage(secondCarriage);
         secondCarriage.setNextCarriage(thirdCarriage);
         thirdCarriage.setNextCarriage(fourthCarriage);
-        fourthCarriage.setNextCarriage(fifthCarriage);
 
-        firstTrain.addPassengers(passengers);
+        List<Passenger> passengers = anyPassengers();
+
+
+        train.addPassengers(passengers);
         for (Passenger passenger : passengers) {
-            Assert.assertTrue(((PassengerCarriageImpl) firstTrain.getCarriage(2)).contains(passenger));
+            Assert.assertTrue(((PassengerCarriage) train.getCarriage(2)).contains(passenger));
         }
 
-        firstTrain.dropOfPassengers(passengers);
+        train.dropOfPassengers(passengers);
         for (Passenger passenger : passengers) {
-            Assert.assertFalse(((PassengerCarriageImpl) firstTrain.getCarriage(2)).contains(passenger));
+            Assert.assertFalse(((PassengerCarriage) train.getCarriage(2)).contains(passenger));
         }
+    }
+
+    private TrainImpl anyTrain() {
+        Locomotive locomotive = new Locomotive(400, 10,
+                Driver.of(User.of("Nikita", "Puzikov", Age.of(40)), true));
+
+        return new TrainImpl("123", locomotive, CargoCarriage.of(50));
+    }
+
+    private List<Passenger> anyPassengers() {
+        return List.of(
+                Passenger.of(User.of("Kirill", "Kaban", Age.of(20)),
+                        Ticket.of("Minsk", "Grodno", new Date(), 2, 11)),
+                Passenger.of(User.of("Alex", "Kasper", Age.of(57)),
+                        Ticket.of("Minsk", "Grodno", new Date(), 2, 12)),
+                Passenger.of(User.of("Nikita", "Gurumin", Age.of(40)),
+                        Ticket.of("Minsk", "Grodno", new Date(), 2, 13))
+                     );
+
     }
 }

@@ -2,26 +2,16 @@ package by.issoft.sample.domain;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class CargoTest {
 
-    @Mock
-    private Cargo firstCargo;
-
-    @Mock
-    private Cargo secondCargo;
-
-    @Mock
-    private Cargo thirdCargo;
-
     @Test
     public void of() {
-        firstCargo = new Cargo(CargoType.GAS, 30);
-        secondCargo = Cargo.of(CargoType.GAS, 30);
+        Cargo firstCargo = new Cargo(CargoType.GAS, 30);
+        Cargo secondCargo = Cargo.of(CargoType.GAS, 30);
 
         assertEquals(firstCargo.getType(), secondCargo.getType());
         assertEquals(firstCargo.getWeight(), secondCargo.getWeight());
@@ -31,35 +21,35 @@ public class CargoTest {
 
     @Test
     public void getWeight() {
+        Cargo cargo;
         for (int weight = 1; weight < 1000; weight++) {
-            firstCargo = new Cargo(weight);
+            cargo = new Cargo(weight);
 
-            Assert.assertEquals(firstCargo.getWeight(), weight);
+            Assert.assertEquals(cargo.getWeight(), weight);
         }
     }
 
     @Test
     public void getType() {
+        Cargo cargo = new Cargo(1);
+        Assert.assertEquals(cargo.getType(), CargoType.SOLID);
 
-        firstCargo = new Cargo(1);
-        Assert.assertEquals(firstCargo.getType(), CargoType.SOLID);
+        cargo = new Cargo(CargoType.SOLID, 1);
+        Assert.assertEquals(cargo.getType(), CargoType.SOLID);
 
-        firstCargo = new Cargo(CargoType.SOLID, 1);
-        Assert.assertEquals(firstCargo.getType(), CargoType.SOLID);
+        cargo = new Cargo(CargoType.GAS, 1);
+        Assert.assertEquals(cargo.getType(), CargoType.GAS);
 
-        firstCargo = new Cargo(CargoType.GAS, 1);
-        Assert.assertEquals(firstCargo.getType(), CargoType.GAS);
-
-        firstCargo = new Cargo(CargoType.FLUID, 1);
-        Assert.assertEquals(firstCargo.getType(), CargoType.FLUID);
+        cargo = new Cargo(CargoType.FLUID, 1);
+        Assert.assertEquals(cargo.getType(), CargoType.FLUID);
     }
 
     @Test
-    public void testEquals() {
+    public void equals() {
 
-        firstCargo = new Cargo(CargoType.SOLID, 1);
-        secondCargo = new Cargo(CargoType.SOLID, 1);
-        thirdCargo = new Cargo(CargoType.SOLID, 1);
+        Cargo firstCargo = new Cargo(CargoType.SOLID, 1);
+        Cargo secondCargo = new Cargo(CargoType.SOLID, 1);
+        Cargo thirdCargo = new Cargo(CargoType.SOLID, 1);
 
         assertEquals(firstCargo, firstCargo);
 

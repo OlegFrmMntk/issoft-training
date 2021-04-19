@@ -1,16 +1,22 @@
 package by.issoft.sample.domain;
 
-public class Passenger extends User {
+public class Passenger {
+
+    private final User user;
 
     private Ticket ticket;
 
-    public Passenger(String firstName, String lastName, Age age, Ticket ticket) {
-        super(firstName, lastName, age);
+    public Passenger(User user, Ticket ticket) {
+        this.user = user;
         this.ticket = ticket;
     }
 
-    public static Passenger of(String firstName, String lastName, Age age, Ticket ticket) {
-        return new Passenger(firstName, lastName, age, ticket);
+    public static Passenger of(User user, Ticket ticket) {
+        return new Passenger(user, ticket);
+    }
+
+    public User getUser() {
+        return user;
     }
 
     public Ticket getTicket() {
@@ -21,5 +27,8 @@ public class Passenger extends User {
         this.ticket = ticket;
     }
 
-
+    @Override
+    public String toString() {
+        return String.format("%s{user = %s, ticketId = %s}", getClass(), user, ticket.getId());
+    }
 }

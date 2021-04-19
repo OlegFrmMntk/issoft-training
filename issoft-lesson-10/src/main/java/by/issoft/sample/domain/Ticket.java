@@ -8,16 +8,16 @@ import static com.google.common.base.Preconditions.checkArgument;
 
 public class Ticket {
 
-    final private String id;
+    private final String id;
 
-    final private String startStation;
-    final private String finishStation;
+    private final String startStation;
+    private final String finishStation;
 
-    final private Date departureDate;
-    final private Date purchaseDate;
+    private final Date departureDate;
+    private final Date purchaseDate;
 
-    final private int carriageNumber;
-    final private int placeNumber;
+    private final int carriageNumber;
+    private final int placeNumber;
 
     public Ticket(String startStation, String finishStation, Date departureDate, int carNumber, int placeNumber) {
 
@@ -91,7 +91,7 @@ public class Ticket {
     @Override
     public String toString() {
         return String.format("Ticket{id = %s, startStation = %s, finishStation = %s, departureDate = %s, " +
-                             "purchaseDate = %s, carNumber = %d, " + "placeNumber = %d}",
+                             "purchaseDate = %s, carNumber = %d, placeNumber = %d}",
                              id, startStation, finishStation, departureDate, purchaseDate, carriageNumber, placeNumber);
     }
 }

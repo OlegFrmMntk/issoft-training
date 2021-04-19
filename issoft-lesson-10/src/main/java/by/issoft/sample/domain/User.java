@@ -1,5 +1,6 @@
 package by.issoft.sample.domain;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class User {
@@ -44,6 +45,19 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id.equals(user.id) && firstName.equals(user.firstName) && lastName.equals(user.lastName) && Objects.equals(age, user.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, age);
     }
 
     @Override

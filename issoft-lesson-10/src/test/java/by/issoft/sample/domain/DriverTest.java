@@ -1,35 +1,19 @@
 package by.issoft.sample.domain;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import static org.junit.Assert.*;
 
 public class DriverTest {
 
-    @Mock
-    Driver firstDriver;
-
-    @Mock
-    Driver secondDriver;
-
-
-    @Before
-    public void createData() {
-
-        firstDriver = new Driver("Alex", "Kondrashov", Age.of(40), true);
-
-        secondDriver = Driver.of("Alex", "Kondrashov", Age.of(40), true);
-
-    }
-
     @Test
     public void of() {
-        assertEquals(firstDriver.getFirstName(), secondDriver.getFirstName());
-        assertEquals(firstDriver.getLastName(), secondDriver.getLastName());
+        User user = User.of("Alex", "Kondrashov", Age.of(40));
 
-        assertEquals(firstDriver.getAge(), secondDriver.getAge());
+        Driver firstDriver = new Driver(user, true);
+        Driver secondDriver = Driver.of(user, true);
+
+        assertEquals(firstDriver.getUser(), secondDriver.getUser());
 
         assertEquals(firstDriver.hasLicence(), secondDriver.hasLicence());
 
@@ -38,13 +22,12 @@ public class DriverTest {
 
     @Test
     public void hasLicence() {
-        assertTrue(firstDriver.hasLicence());
-        assertTrue(secondDriver.hasLicence());
+        Driver driver = Driver.of(User.of("Alex", "Kondrashov", Age.of(40)), true);
 
-        firstDriver.setLicenceStatus(false);
-        secondDriver.setLicenceStatus(false);
+        assertTrue(driver.hasLicence());
 
-        assertFalse(firstDriver.hasLicence());
-        assertFalse(secondDriver.hasLicence());
+        driver.setLicence(false);
+
+        assertFalse(driver.hasLicence());
     }
 }

@@ -1,9 +1,6 @@
 package by.issoft.sample.domain;
 
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import java.util.Date;
 
@@ -12,24 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TicketTest {
 
-    @Mock
-    Ticket firstTicket;
-
-    @Mock
-    Ticket secondTicket;
-
-    @Mock
-    Ticket thirdTicket;
-
-    @Before
-    public void createData() {
-        firstTicket = new Ticket("Minsk", "Grodno", new Date(), 1, 1);
-        secondTicket = new Ticket("Minsk", "Grodno", new Date(), 1, 1);
-        thirdTicket = new Ticket("Minsk", "Grodno", new Date(), 1, 1);
-    }
-
     @Test
-    public void testEquals() {
+    public void equals() {
+
+        Ticket firstTicket = new Ticket("Minsk", "Grodno", new Date(), 1, 1);
+        Ticket secondTicket = new Ticket("Minsk", "Grodno", new Date(), 1, 1);
+        Ticket thirdTicket = new Ticket("Minsk", "Grodno", new Date(), 1, 1);
 
         assertEquals(firstTicket, firstTicket);
 

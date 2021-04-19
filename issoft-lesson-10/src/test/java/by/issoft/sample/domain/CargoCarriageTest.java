@@ -1,9 +1,7 @@
 package by.issoft.sample.domain;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import java.util.List;
 
@@ -11,120 +9,121 @@ import static org.junit.Assert.*;
 
 public class CargoCarriageTest {
 
-    @Mock
-    private CargoCarriageImpl firstCargoCarriage;
-
-    @Mock
-    private CargoCarriageImpl secondCargoCarriage;
-
-    @Mock
-    private CargoCarriageImpl thirdCargoCarriage;
-
-    @Mock
-    Cargo firstCargo;
-
-    @Mock
-    Cargo secondCargo;
-
-    @Before
-    public void createData() {
-        firstCargoCarriage = new CargoCarriageImpl(50,
-                List.of(new Cargo(21), new Cargo(CargoType.GAS, 2)));
-
-        secondCargoCarriage = new CargoCarriageImpl(80,
-                List.of(new Cargo(CargoType.FLUID, 5), new Cargo(15)));
-
-        thirdCargoCarriage = new CargoCarriageImpl(70);
-
-        firstCargoCarriage.setNextCarriage(secondCargoCarriage);
-        secondCargoCarriage.setNextCarriage(thirdCargoCarriage);
-
-        firstCargo = new Cargo(17);
-        secondCargo = new Cargo(CargoType.FLUID, 2);
-    }
-
     @Test
     public void of() {
-        firstCargoCarriage = CargoCarriageImpl.of(40, List.of(firstCargo, secondCargo));
+        Cargo firstCargo = Cargo.of(CargoType.FLUID, 12);
+        Cargo secondCargo = Cargo.of(CargoType.GAS, 9);
 
-        assertEquals(firstCargoCarriage.getCapacity(), 40);
-        assertEquals(firstCargoCarriage.getFullness(), 19);
+        CargoCarriage cargoCarriage = CargoCarriage.of(40, List.of(firstCargo, secondCargo));
 
-        assertNull(firstCargoCarriage.getNextCarriage());
+        assertEquals(cargoCarriage.getCapacity(), 40);
+        assertEquals(cargoCarriage.getFullness(), 21);
 
-        assertEquals(firstCargoCarriage.getCargos(), List.of(firstCargo, secondCargo));
+        assertNull(cargoCarriage.getNextCarriage());
+
+        assertEquals(cargoCarriage.getCargos(), List.of(firstCargo, secondCargo));
     }
 
     @Test
-    public void testAddCargo() {
+    public void addCargo() {
+        CargoCarriage cargoCarriage = CargoCarriage.of(50);
 
-        firstCargoCarriage.loadCargo(firstCargo);
-        Assert.assertTrue(firstCargoCarriage.contains(firstCargo));
+        Cargo cargo = Cargo.of(CargoType.SOLID, 24);
+
+        cargoCarriage.loadCargo(cargo);
+        Assert.assertTrue(cargoCarriage.contains(cargo));
     }
 
     @Test
-    public void testAddCargos() {
+    public void addCargos() {
+        CargoCarriage cargoCarriage = CargoCarriage.of(50);
 
-        secondCargoCarriage.loadCargos(List.of(firstCargo, secondCargo));
+        Cargo firstCargo = Cargo.of(CargoType.GAS, 17);
+        Cargo secondCargo = Cargo.of(CargoType.FLUID, 10);
 
-        Assert.assertTrue(secondCargoCarriage.contains(firstCargo));
-        Assert.assertTrue(secondCargoCarriage.contains(secondCargo));
+        cargoCarriage.loadCargos(List.of(firstCargo, secondCargo));
+
+        Assert.assertTrue(cargoCarriage.contains(firstCargo));
+        Assert.assertTrue(cargoCarriage.contains(secondCargo));
     }
 
     @Test
-    public void testPickUpCargo() {
-        firstCargoCarriage.loadCargo(firstCargo);
-        Assert.assertTrue(firstCargoCarriage.contains(firstCargo));
+    public void pickUpCargo() {
+        CargoCarriage cargoCarriage = CargoCarriage.of(50);
 
-        firstCargoCarriage.uploadCargo(firstCargo);
-        Assert.assertFalse(firstCargoCarriage.contains(firstCargo));
+        Cargo cargo = Cargo.of(CargoType.SOLID, 18);
+
+        cargoCarriage.loadCargo(cargo);
+        Assert.assertTrue(cargoCarriage.contains(cargo));
+
+        cargoCarriage.uploadCargo(cargo);
+        Assert.assertFalse(cargoCarriage.contains(cargo));
     }
 
     @Test
-    public void testPickUpCargos() {
-        secondCargoCarriage.loadCargos(List.of(firstCargo, secondCargo));
-        Assert.assertTrue(firstCargoCarriage.contains(firstCargo));
-        Assert.assertTrue(firstCargoCarriage.contains(secondCargo));
+    public void pickUpCargos() {
+        CargoCarriage cargoCarriage = CargoCarriage.of(50);
 
+        Cargo firstCargo = Cargo.of(17);
+        Cargo secondCargo = Cargo.of(24);
 
-        secondCargoCarriage.uploadCargos(List.of(firstCargo, secondCargo));
+        cargoCarriage.loadCargos(List.of(firstCargo, secondCargo));
 
-        Assert.assertFalse(firstCargoCarriage.contains(firstCargo));
-        Assert.assertFalse(firstCargoCarriage.contains(secondCargo));
+        Assert.assertTrue(cargoCarriage.contains(firstCargo));
+        Assert.assertTrue(cargoCarriage.contains(secondCargo));
+
+        cargoCarriage.uploadCargos(List.of(firstCargo, secondCargo));
+
+        Assert.assertFalse(cargoCarriage.contains(firstCargo));
+        Assert.assertFalse(cargoCarriage.contains(secondCargo));
     }
 
     @Test
-    public void testContainsCargo() {
-        Assert.assertFalse(thirdCargoCarriage.contains(firstCargo));
-        Assert.assertFalse(thirdCargoCarriage.contains(secondCargo));
+    public void containsCargo() {
+        CargoCarriage cargoCarriage = CargoCarriage.of(50);
 
-        thirdCargoCarriage.loadCargo(firstCargo);
-        Assert.assertTrue(thirdCargoCarriage.contains(firstCargo));
+        Cargo firstCargo = Cargo.of(CargoType.SOLID, 20);
+        Cargo secondCargo = Cargo.of(CargoType.GAS, 10);
 
-        thirdCargoCarriage.loadCargo(secondCargo);
-        Assert.assertTrue(thirdCargoCarriage.contains(secondCargo));
+        Assert.assertFalse(cargoCarriage.contains(firstCargo));
+        Assert.assertFalse(cargoCarriage.contains(secondCargo));
+
+        cargoCarriage.loadCargo(firstCargo);
+        Assert.assertTrue(cargoCarriage.contains(firstCargo));
+
+        cargoCarriage.loadCargo(secondCargo);
+        Assert.assertTrue(cargoCarriage.contains(secondCargo));
     }
 
     @Test
-    public void testGetFullness() {
+    public void getFullness() {
+        CargoCarriage firstCargoCarriage = CargoCarriage.of(70, List.of(Cargo.of(21),
+                Cargo.of(CargoType.GAS, 2)));
+
         Assert.assertEquals(firstCargoCarriage.getFullness(), 23);
-        Assert.assertEquals(secondCargoCarriage.getFullness(), 20);
-        Assert.assertEquals(thirdCargoCarriage.getFullness(), 0);
 
-        firstCargoCarriage.loadCargo(firstCargo);
+        firstCargoCarriage.loadCargo(Cargo.of(17));
         Assert.assertEquals(firstCargoCarriage.getFullness(), 40);
 
-        firstCargoCarriage.loadCargo(secondCargo);
-        Assert.assertEquals(firstCargoCarriage.getFullness(), 42);
+        firstCargoCarriage.loadCargo(Cargo.of(24));
+        Assert.assertEquals(firstCargoCarriage.getFullness(), 64);
 
-        firstCargoCarriage.loadCargo(Cargo.of(8));
-        Assert.assertEquals(firstCargoCarriage.getFullness(), 50);
+        firstCargoCarriage.loadCargo(Cargo.of(6));
+        Assert.assertEquals(firstCargoCarriage.getFullness(), 70);
     }
 
     @Test
-    public void testLink() {
+    public void link() {
+        CargoCarriage firstCargoCarriage = CargoCarriage.of(50);
+        CargoCarriage secondCargoCarriage = CargoCarriage.of(50);
+        CargoCarriage thirdCargoCarriage = CargoCarriage.of(50);
+
+        firstCargoCarriage.setNextCarriage(secondCargoCarriage);
         assertEquals(firstCargoCarriage.getNextCarriage(), secondCargoCarriage);
+
+        secondCargoCarriage.setNextCarriage(thirdCargoCarriage);
         assertEquals(secondCargoCarriage.getNextCarriage(), thirdCargoCarriage);
+
         assertNull(thirdCargoCarriage.getNextCarriage());
     }
 }

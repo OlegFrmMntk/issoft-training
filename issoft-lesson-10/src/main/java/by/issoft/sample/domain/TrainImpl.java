@@ -9,7 +9,7 @@ import static com.google.common.base.Preconditions.checkArgument;
 
 public class TrainImpl implements Train {
 
-    final private String number;
+    private final String number;
 
     private Locomotive locomotive;
 
@@ -114,15 +114,18 @@ public class TrainImpl implements Train {
 
         boolean key = false;
         while (carriage != null) {
-            if (carriage.getClass().equals(CargoCarriageImpl.class) &&
-                    carriage.getCapacity() - carriage.getFullness() >= cargo.getWeight()) {
+            if (carriage.getClass().equals(CargoCarriage.class)) {
 
-                ((CargoCarriageImpl) carriage).loadCargo(cargo);
-                key = true;
+                CargoCarriage cargoCarriage = (CargoCarriage) carriage;
+                cargoCarriage.loadCargo(cargo);
 
-                logger.info(String.format("%s = %s, Cargo = %s added", carriage.getClass(), carriage.getId(), cargo));
+                if (cargoCarriage.getCapacity() - cargoCarriage.getFullness() >= cargo.getWeight()) {
+                    key = true;
 
-                break;
+                    logger.info(String.format("%s = %s, Cargo = %s added", carriage.getClass(), carriage.getId(), cargo));
+
+                    break;
+                }
             }
 
             carriage = carriage.getNextCarriage();
@@ -134,10 +137,10 @@ public class TrainImpl implements Train {
     public void loadCargo(int carriageNumber, Cargo cargo) {
         Carriage carriage = getCarriage(carriageNumber);
 
-        checkArgument(carriage.getClass().equals(CargoCarriageImpl.class),
+        checkArgument(carriage.getClass().equals(CargoCarriage.class),
                 "by.issoft.sample.domain.Train The carriage is not a cargo carriage");
 
-        ((CargoCarriageImpl) carriage).loadCargo(cargo);
+        ((CargoCarriage) carriage).loadCargo(cargo);
 
         logger.info(String.format("%s = %s, Cargo = %s added", carriage.getClass(), carriage.getId(), cargo));
     }
@@ -149,7 +152,9 @@ public class TrainImpl implements Train {
             weight += cargo.getWeight();
         }
 
-        checkArgument(weight <= (getCarriage(carriageNumber).getCapacity() - getCarriage(carriageNumber).getFullness()),
+        CargoCarriage cargoCarriage = (CargoCarriage) getCarriage(carriageNumber);
+
+        checkArgument(weight <= cargoCarriage.getCapacity() - cargoCarriage.getFullness(),
                 "by.issoft.sample.domain.Train Not enough space");
 
         for (Cargo cargo : cargos) {
@@ -166,10 +171,10 @@ public class TrainImpl implements Train {
     public void uploadCargo(int carriageNumber, Cargo cargo) {
         Carriage carriage = getCarriage(carriageNumber);
 
-        checkArgument(carriage.getClass().equals(CargoCarriageImpl.class),
+        checkArgument(carriage.getClass().equals(CargoCarriage.class),
                 "by.issoft.sample.domain.Train The carriage is not a cargo carriage");
 
-        ((CargoCarriageImpl) carriage).uploadCargo(cargo);
+        ((CargoCarriage) carriage).uploadCargo(cargo);
 
         logger.info(String.format("%s = %s, Cargo = %s uploaded", carriage.getClass(), carriage.getId(), cargo));
     }
@@ -183,12 +188,13 @@ public class TrainImpl implements Train {
     public void addPassenger(Passenger passenger) {
         Carriage carriage = getCarriage(passenger.getTicket().getCarriageNumber());
 
-        checkArgument(carriage.getClass().equals(PassengerCarriageImpl.class),
+        checkArgument(carriage.getClass().equals(PassengerCarriage.class),
                 "by.issoft.sample.domain.Train The carriage is not a passenger carriage");
 
-        ((PassengerCarriageImpl) carriage).addPassenger(passenger);
+        ((PassengerCarriage) carriage).addPassenger(passenger);
 
-        logger.info(String.format("%s = %s, Passenger = %s added", carriage.getClass(), carriage.getId(), passenger.getId()));
+        logger.info(String.format("%s = %s, Passenger = %s added",
+                carriage.getClass(), carriage.getId(), passenger.getUser().getId()));
     }
 
     public void addPassengers(List<Passenger> passengers) {
@@ -200,12 +206,13 @@ public class TrainImpl implements Train {
     public void dropOfPassenger(Passenger passenger) {
         Carriage carriage = getCarriage(passenger.getTicket().getCarriageNumber());
 
-        checkArgument(carriage.getClass().equals(PassengerCarriageImpl.class),
+        checkArgument(carriage.getClass().equals(PassengerCarriage.class),
                 "by.issoft.sample.domain.Train The carriage is not a passenger carriage");
 
-        ((PassengerCarriageImpl) carriage).dropOffPassenger(passenger);
+        ((PassengerCarriage) carriage).dropOffPassenger(passenger);
 
-        logger.info(String.format("%s = %s, Passenger = %s dropped", carriage.getClass(), carriage.getId(), passenger.getId()));
+        logger.info(String.format("%s = %s, Passenger = %s dropped",
+                carriage.getClass(), carriage.getId(), passenger.getUser().getId()));
     }
 
     public void dropOfPassengers(List<Passenger> passengers) {
