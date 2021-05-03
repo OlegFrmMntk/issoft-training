@@ -5,12 +5,12 @@ import java.util.UUID;
 
 public class User {
 
-    protected String id;
+    private String id;
 
-    protected final String firstName;
-    protected final String lastName;
+    private final String firstName;
+    private final String lastName;
 
-    protected Age age;
+    private Age age;
 
     public User(String firstName, String lastName, Age age) {
         this.id = UUID.randomUUID().toString();
